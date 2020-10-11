@@ -1,0 +1,84 @@
+/*!
+INTRODUCTION 
+ */
+.introduction,.about,.gallery,.team-dot,.news,.contact{
+	padding:4em 0;
+  }
+  .w3l-heading h3{
+    text-align: center;
+    color: #000000;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  .w3ls-border{
+    background: #000000;
+    width: 7%;
+    margin: 3em auto 0;
+    height: 2px;
+  }
+  .introduction-info,.agileits-about-grids,.agileits-team-grids,.wthree-news-grids {
+    margin: 4em 0 0 0;
+  }
+  .introduction-info p{
+	  color: #505050;
+    font-size: .9em;
+    margin: 0 auto;
+    line-height: 1.8em;
+    width: 70%;
+    text-align: center;
+  }
+ 
+ /*!
+ MINI PROJECT
+ */
+ 
+
+
+  /*!
+FOOTER 
+ */
+
+ .footer {
+	padding:4em 0;
+  }
+  .w3l-footer h3{
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  .w3ls-footer-border{
+    background: #ffffff;
+    width: 50%;
+    margin: 1em auto 0;
+    height: 2px;
+    
+  }
+  .footer {
+    margin: 4em 0 0 0;
+  }
+  .footer-info p{
+      color: #ffffff;
+    padding-top: 20px;
+    font-size: .8em;
+    margin: 0 auto;
+    line-height: 1.8em;
+    width: 70%;
+    text-align: left;
+  }
+
+   /*!
+ADMIN PAGE
+ */
+
+ /*
+.bg-cover-jumbotron {
+  
+}
+*/

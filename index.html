@@ -1,638 +1,482 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="icon" href="images/iyon_logo_color.png">
-	<title>IYONAdryanLF_Portofolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Designer Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
-	<script type="application/x-javascript">
-		addEventListener("load", function () {
-			setTimeout(hideURLbar, 0);
-		}, false);
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>IYON AdryanLF</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- MDB icon -->
+  <link rel="icon" href="materials/iyon_logo_color.png" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+	/* width */
+	::-webkit-scrollbar {
+	  width: 5px;
+	}
+	/* Track */
+	::-webkit-scrollbar-track {
+	  box-shadow: inset 0 0 5px grey; 
+	  border-radius: 10px;
+	}
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	  background: linear-gradient(0deg, rgba(74,21,156,1) 0%, rgba(255,41,171,1) 50%, rgba(255,199,0,1) 100%);
+	  border-radius: 10px;
+	}
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	  background: linear-gradient(0deg, rgba(39,10,84,1) 0%, rgba(125,20,84,1) 50%, rgba(153,120,2,1) 100%);
+	}
 
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
-	</script>
-	<!-- Custom Theme files -->
-	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-	<!--gallery -->
-	<link type="text/css" rel="stylesheet" href="css/cm-overlay.css" />
-	<!-- //gallery -->
-	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-	<link href="css/font-awesome.css" rel="stylesheet">
-	<!-- font-awesome icons -->
-	<!--//Custom Theme files-->
-	<!-- js -->
-	<script src="js/jquery-2.2.3.min.js"></script>
-	<!-- //js -->
-	<!-- web-fonts -->
-	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i" rel="stylesheet">
-	<!-- //web-fonts -->
+  </style>
+  
 </head>
-
 <body>
-	<!-- banner -->
-	<div id="home" class="banner">
-		<div class="banner-agileinfo">
-			<!-- header -->
-			<div class="header">
-				<div class="container">
-					<div class="menu">
-						<a href="" id="menuToggle"> <span class="navClosed"></span> </a>
-						<nav>
-							<a href="#home" class="active scroll">Home</a>
-							<a href="#about" class="scroll">About Me</a>
-							<a href="#skills" class="scroll">Skills</a>
-							<a href="#gallery" class="scroll">My Work</a>
-							<a href="#contact" class="scroll">Contact</a>
-						</nav>
-						<script>
-							(function ($) {
-								// Menu Functions
-								$(document).ready(function () {
-									$('#menuToggle').click(function (e) {
-										var $parent = $(this).parent('.menu');
-										$parent.toggleClass("open");
-										var navState = $parent.hasClass('open') ? "hide" : "show";
-										$(this).attr("title", navState + " navigation");
-										// Set the timeout to the animation length in the CSS.
-										setTimeout(function () {
-											console.log("timeout set");
-											$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
-										}, 200);
-										e.preventDefault();
-									});
-								});
-							})(jQuery);
-						</script>
 
-					</div>
-					<div class="clearfix"> </div>
+  <!-- Start your project here-->
+	<img class="w-100" src="materials/iyonadryanlf_header.gif" alt="this slowpoke moves" image"/>
+    <div class="container">
+	
+		<!-- INTRO -->
+		<div class="introduction" id="indro">
+			<div class="container">
+				<div class="w3l-heading wow fadeInUp" data-wow-delay="0.6s">
+					<h3>ADRYAN LUTHFI FAIZ</h3>
+					<div class="w3ls-border"> </div>
+				</div>
+				<div class="introduction-info wow fadeInUp" data-wow-delay="0.6s">
+					<p>
+					My name is <strong>Adryan</strong>, and my nickname is <strong>IYON</strong>. I’m a student of computer science who personally like video editing
+					and inrested in UI/UX Design, Artificial Intelligence, and Game Developer.
+					It's been +5 years I have video editing experience, so I can design until now. Basically, 
+					I like to edit project since I was a kid like music, make a level editor from game, etc.
+					And I always give my best to create a seamless and delightful experience.
+					</p>
 				</div>
 			</div>
-			<!-- //header -->
-			<div class="banner-text">
-				<div class="container">
-					<img src="images\iyon_logo.png" alt="IYON_LOGO" width="125" height="125">
-					<h2 class="w3ls-bnrtext">IYON AdryanLF</h2>
-					<p class="w3ls-p">Adryan Luthfi Faiz</p>
-					<a href="#about" class="buy btn-wayra scroll">Explore My Work</a>
-				</div>
-			</div>
 		</div>
-	</div>
-	<!-- //banner -->
-	<!-- about -->
-	<div class="agile-about w3ls-section text-center" id="about">
-		<div class="container">
-			<h3 class="agileits-title">about me</h3>
-			<div class="agileits-about-grid">
-				<p>A student of computer science who personally like video editing
-				and inrested in UI/UX Design, Artificial Intelligence, and Game Development</p>
-			</div>
-			<a href="#contact" class="wthree- about-link scroll">contact me</a>
-		</div>
-	</div>
-	<!-- //about -->
-	<!-- about-bottom -->
-	<div class="agileits-about-btm">
-		<div class="container">
-			<div class="w3-flex">
-			<div class="col-md-4 col-sm-4 col-xs-12 ab1 agileits-about-grid1">
-				<span class="fa fa-graduation-cap  wthree-title-list" aria-hidden="true"></span>
-				<h4 class="agileinfo-head">Education</h4>
-				<h5>2016 - Present</h5>
-				<p>Universitas Padjadjaran</p>
-				<h5>2013 - 2016</h5>
-				<p>SMA Negeri 52</p>
-				<h5>2010 - 2013</h5>
-				<p>MTsN 5</p>
-			</div>
-			<div class="col-md-4 col-sm-4 ab1 agileits-about-grid2">
-				<span class="fa fa-trophy" aria-hidden="true"></span>
-				<h4 class="agileinfo-head">Experience</h4>
-				<h5>Leader of IDeA</h5>
-				<p>Informatics Design Associations, Himatif FMIPA Unpad - 2019</p>
-				<h5>Speaker - Video Editing</h5>
-				<p>Workshop Forum Media MIPA - 2018</p>
-				<h5>Staff of Department Media and Information</h5>
-				<p>Executive Students Council, Himatif FMIPA Unpad - 2017</p>
-			</div>
-			<div class="col-md-4 col-sm-4 ab1 agileits-about-grid3">
-				<span class="fa fa-heart" aria-hidden="true"></span>
-				<h4 class="agileinfo-head">Interest</h4>
-				<h5>Piano</h5>
-				<h5>Editor</h5>
-				<h5>Graphic Designer</h5>
-				<h5>Game</h5>
-				<h5>Music</h5>
-			</div>
-			<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
-	<!-- //about-bottom -->
-	<!-- skills -->
-	<div class="agile-service w3ls-section" id="skills">
-		<div class="container">
-			<div class="col-md-5 w3_agileits-service-left">
-				<h3 class="agileits-title">skills</h3>
-				<p><span class="bullelements">&bull;</span> Sony Vegas</p>
-				<p><span class="bullelements">&bull;</span> Adobe After Effect</p>
-				<p><span class="bullelements">&bull;</span> Adobe XD</p>
-				<p><span class="bullelements">&bull;</span> Adobe Photoshop</p>
-			</div>
-			<div class="col-md-7 skills-right">
-				<div class="vertical-skills  pull-right xs-center">
-					<ul class="list-inline">
-						<li>
-							<div class="skill" style="height:90%; background:#33FF33;"><span class="value">90%</span></div><span class="title">HTML</span></li>
-						<li>
-							<div class="skill" style="height:80%; background:#33FF99;"><span class="value">80%</span></div><span class="title">CSS</span></li>
-						<li>
-							<div class="skill" style="height:80%; background:#33FFFF;"><span class="value">80%</span></div><span class="title">PHP</span></li>
-						<li>
-							<div class="skill" style="height:70%; background:#6361f0;"><span class="value">70%</span></div><span class="title">JS</span></li>
+		<!--/.INTRO-->
+	
+		<!-- CARD GROUP -->
+		<div class="card-group">
 
-					</ul>
-				</div>
-				
+		  <!-- Card_1 -->
+		  <div class="card mb-4 wow fadeInRight" data-wow-delay="0.2s">
+
+			<!-- Card image_1 -->
+			<div class="view overlay">
+			  <div class="mh-100 sunny-morning-gradient white-text text-center" style="height: 50px;">
+			  <h3 class="pt-2"><strong><i class="fas fa-graduation-cap"></i> Education</strong></h3>
+			  </div>
 			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-	<div class="w3ls-section agileits-gallery" id="gallery">
-		<div class="container">
-			<h3 class="agileits-title">MY work</h3>
-			<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
-				<ul id="myTab" class="nav nav-tabs" role="tablist">
-					<li role="presentation" class="active"><a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home-main" aria-expanded="true">Show all</a></li>
-					<li role="presentation"><a href="#learning" role="tab" id="learning-tab" data-toggle="tab" aria-controls="learning">UI/UX</a></li>
-					<li role="presentation"><a href="#project" role="tab" id="project-tab" data-toggle="tab" aria-controls="project">Other Project</a></li>
-					<li role="presentation"><a href="#trialerror" role="tab" id="trialerror-tab" data-toggle="tab" aria-controls="trialerror">Trial Error</a></li>
-				</ul>
-				<div id="myTabContent" class="tab-content">
-					<div role="tabpanel" class="tab-pane fade in active" id="home-main" aria-labelledby="home-tab">
-						<!-- SHOW ALL -->
-						<div class="w3_tab_img">
-							<div class="col-sm-3 w3_tab_img_left">
-								<div class="demo">
-									<a class="cm-overlay" href="images/g1_.jpeg">
-										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g1_.jpeg" alt=" " class="img-responsive" />
-										</figure>
-									</a>
-								</div>
-								<div class="agile-gallery-info">
-									<h5>SimuLab</h5>
-									<p>Mobile App</p>
-								</div>
-							</div>
-							<div class="col-sm-3 w3_tab_img_left">
-								<div class="demo">
-									<a class="cm-overlay" href="images/g2_.jpeg">
-										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g2_.jpeg" alt=" " class="img-responsive" />
-										</figure>
-									</a>
-								</div>
-								<div class="agile-gallery-info">
-									<h5>Kalfi</h5>
-									<p>Mobile App</p>
-								</div>
-							</div>
-							<div class="col-sm-3 w3_tab_img_left">
-								<div class="demo">
-									<a class="cm-overlay" href="images/g3_.jpeg">
-										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g3_.jpeg" alt=" " class="img-responsive" />
-										</figure>
-									</a>
-								</div>
-								<div class="agile-gallery-info">
-									<h5>Nebak Kecap</h5>
-									<p>Desktop App </p>
-								</div>
-							</div>
-							<div class="col-sm-3 w3_tab_img_left">
-								<div class="demo">
-									<a class="cm-overlay" href="images/g6_.jpeg">
-										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g6_.jpeg" alt=" " class="img-responsive" />
-										</figure>
-									</a>
-								</div>
-								<div class="agile-gallery-info">
-									<h5>Prototype Mobile</h5>
-									<p>Mobile App</p>
-								</div>
-							</div>
-							<div class="col-sm-3 w3_tab_img_left">
-								<div class="demo">
-										<a class="cm-overlay" href="images/g4_.gif">
-										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g4_.gif" alt=" " class="img-responsive" />
-										</figure>
-									</a>
-								</div>
-									<div class="agile-gallery-info">
-									<h5>JagaSehat Apps</h5>
-									<p>Splash Screen Animation</p>
-								</div>
-							</div>
-							<div class="col-sm-3 w3_tab_img_left">
-								<div class="demo">
-									<a class="cm-overlay" href="images/g7_.jpeg">
-										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g7_.jpeg" alt=" " class="img-responsive" />
-										</figure>
-									</a>
-								</div>
-								<div class="agile-gallery-info">
-									<h5>Prototype Web</h5>
-									<p>Web App</p>
-								</div>
-							</div>
-							<div class="col-sm-3 w3_tab_img_left">
-								<div class="demo">
-									<a class="cm-overlay" href="images/g10_.jpeg">
-										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g10_.jpeg" alt=" " class="img-responsive" />
-										</figure>
-									</a>
-								</div>
-								<div class="agile-gallery-info">
-									<h5>Prototype VR</h5>
-									<p>Virtual Reality </p>
-								</div>
-							</div>
-							<div class="col-sm-3 w3_tab_img_left">
-								<div class="demo">
-									<a class="cm-overlay" href="images/g8_.jpeg">
-										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g8_.jpeg" alt=" " class="img-responsive" />
-										</figure>
-									</a>
-								</div>
-								<div class="agile-gallery-info">
-									<h5>2D Sprites</h5>
-									<p>Asset SimuLab </p>
-								</div>
-							</div>
-							
-							<div class="col-sm-3 w3_tab_img_left">
-								<div class="demo">
-									<a class="cm-overlay" href="images/g5_.gif">
-										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g5_.gif" alt=" " class="img-responsive" />
-										</figure>
-									</a>
-								</div>
-								<div class="agile-gallery-info">
-									<h5>Projek Sederhana</h5>
-									<p>Splash Screen Animation</p>
-								</div>
-							</div>
-							<div class="col-sm-3 w3_tab_img_left">
-								<div class="demo">
-									<a class="cm-overlay" href="images/g9_.gif">
-										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g9_.gif" alt=" " class="img-responsive" />
-										</figure>
-									</a>
-								</div>
-								<div class="agile-gallery-info">
-									<h5>Mochi Mochi</h5>
-									<p>Mini Game</p>
-								</div>
-							</div>
-							<div class="col-sm-3 w3_tab_img_left">
-								<div class="demo">
-									<a class="cm-overlay" href="images/g11_.gif">
-										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g11_.gif" alt=" " class="img-responsive" />
-										</figure>
-									</a>
-								</div>
-								<div class="agile-gallery-info">
-									<h5>2D Cat Animation</h5>
-									<p>2D Animation</p>
-								</div>
-							</div>
-							<div class="col-sm-3 w3_tab_img_left">
-								<div class="demo">
-									<a class="cm-overlay" href="images/g12_.gif">
-										<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g12_.gif" alt=" " class="img-responsive" />
-										</figure>
-									</a>
-								</div>
-								<div class="agile-gallery-info">
-									<h5>3D Logo Animation</h5>
-									<p>3D Animation</p>
-								</div>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-					</div>
-					<div role="tabpanel" class="tab-pane fade" id="learning" aria-labelledby="learning-tab">
-						<div class="w3_tab_img">
-							<!-- UI/UX -->
-								<div class="col-sm-3 w3_tab_img_left">
-									<div class="demo">
-										<a class="cm-overlay" href="images/g1_.jpeg">
-											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g1_.jpeg" alt=" " class="img-responsive" />
-											</figure>
-										</a>
-									</div>
-									<div class="agile-gallery-info">
-										<h5>SimuLab</h5>
-										<p>Mobile App</p>
-									</div>
-								</div>
-								<div class="col-sm-3 w3_tab_img_left">
-									<div class="demo">
-										<a class="cm-overlay" href="images/g2_.jpeg">
-											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g2_.jpeg" alt=" " class="img-responsive" />
-											</figure>
-										</a>
-									</div>
-									<div class="agile-gallery-info">
-										<h5>Kalfi</h5>
-										<p>Mobile App</p>
-									</div>
-								</div>
-								<div class="col-sm-3 w3_tab_img_left">
-									<div class="demo">
-										<a class="cm-overlay" href="images/g3_.jpeg">
-											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g3_.jpeg" alt=" " class="img-responsive" />
-											</figure>
-										</a>
-									</div>
-									<div class="agile-gallery-info">
-										<h5>Nebak Kecap</h5>
-										<p>Desktop App </p>
-									</div>
-								</div>
-								<div class="col-sm-3 w3_tab_img_left">
-									<div class="demo">
-										<a class="cm-overlay" href="images/g8_.jpeg">
-											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g8_.jpeg" alt=" " class="img-responsive" />
-											</figure>
-										</a>
-									</div>
-									<div class="agile-gallery-info">
-										<h5>2D Sprites</h5>
-										<p>Asset SimuLab </p>
-									</div>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-						</div>
-					<div role="tabpanel" class="tab-pane fade" id="project" aria-labelledby="project-tab">
-						<div class="w3_tab_img">
-							<!-- OTHER PROJECT -->
-								<div class="col-sm-3 w3_tab_img_left">
-									<div class="demo">
-											<a class="cm-overlay" href="images/g4_.gif">
-											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g4_.gif" alt=" " class="img-responsive" />
-											</figure>
-										</a>
-									</div>
-										<div class="agile-gallery-info">
-										<h5>JagaSehat Apps</h5>
-										<p>Splash Screen Animation</p>
-										</div>
-								</div>
-								<div class="col-sm-3 w3_tab_img_left">
-									<div class="demo">
-										<a class="cm-overlay" href="images/g5_.gif">
-											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g5_.gif" alt=" " class="img-responsive" />
-											</figure>
-										</a>
-									</div>
-									<div class="agile-gallery-info">
-										<h5>Projek Sederhana</h5>
-										<p>Splash Screen Animation</p>
-									</div>
-								</div>
-								<div class="col-sm-3 w3_tab_img_left">
-									<div class="demo">
-										<a class="cm-overlay" href="images/g9_.gif">
-											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g9_.gif" alt=" " class="img-responsive" />
-											</figure>
-										</a>
-									</div>
-									<div class="agile-gallery-info">
-										<h5>Mochi Mochi</h5>
-										<p>Mini Game</p>
-									</div>
-								</div>
-								<div class="col-sm-3 w3_tab_img_left">
-									<div class="demo">
-										<a class="cm-overlay" href="images/g11_.gif">
-											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g11_.gif" alt=" " class="img-responsive" />
-											</figure>
-										</a>
-									</div>
-									<div class="agile-gallery-info">
-										<h5>2D Cat Animation</h5>
-										<p>2D Animation</p>
-									</div>
-								</div>
-								<div class="col-sm-3 w3_tab_img_left">
-									<div class="demo">
-										<a class="cm-overlay" href="images/g12_.gif">
-											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g12_.gif" alt=" " class="img-responsive" />
-											</figure>
-										</a>
-									</div>
-									<div class="agile-gallery-info">
-										<h5>3D Logo Animation</h5>
-										<p>3D Animation</p>
-									</div>
-								</div>
-							<div class="clearfix"> </div>
-						</div>
-					</div>
-					<div role="tabpanel" class="tab-pane fade" id="trialerror" aria-labelledby="trialerror-tab">
-						<div class="w3_tab_img">
-							<!-- TRIAL ERROR -->
-								<div class="col-sm-3 w3_tab_img_left">
-									<div class="demo">
-										<a class="cm-overlay" href="images/g6_.jpeg">
-											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g6_.jpeg" alt=" " class="img-responsive" />
-											</figure>
-										</a>
-									</div>
-									<div class="agile-gallery-info">
-										<h5>Prototype Mobile</h5>
-										<p>Mobile App</p>
-									</div>
-								</div>
-								<div class="col-sm-3 w3_tab_img_left">
-									<div class="demo">
-										<a class="cm-overlay" href="images/g7_.jpeg">
-											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g7_.jpeg" alt=" " class="img-responsive" />
-											</figure>
-										</a>
-									</div>
-									<div class="agile-gallery-info">
-										<h5>Prototype Web</h5>
-										<p>Web App</p>
-									</div>
-								</div>
-								<div class="col-sm-3 w3_tab_img_left">
-									<div class="demo">
-										<a class="cm-overlay" href="images/g10_.jpeg">
-											<figure class="imghvr-shutter-in-out-diag-2"><img src="images/g10_.jpeg" alt=" " class="img-responsive" />
-											</figure>
-										</a>
-									</div>
-									<div class="agile-gallery-info">
-										<h5>Prototype VR</h5>
-										<p>Virtual Reality </p>
-									</div>
-								</div>
-							<div class="clearfix"> </div>
-						</div>
-					</div>
-				</div>
+
+			<!-- Card content_1 -->
+			<div class="card-body">
+			  <!-- Title -->
+			  <h4 class="card-title wow bounceIn" data-wow-delay="0.8s"><i class="fas fa-caret-right" style="color:rgb(255,199,0)"></i> 2016 - PRESENT</h4>
+			  <!-- Text -->
+			  <p class="card-text wow bounceIn" data-wow-delay="0.9s">Universitas Padjadjaran</p>
+			  <!-- Title -->
+			  <h4 class="card-title wow bounceIn" data-wow-delay="1.0s"><i class="fas fa-caret-right" style="color:rgb(255,199,0)"></i> 2013 - 2016</h4>
+			  <!-- Text -->
+			  <p class="card-text wow bounceIn" data-wow-delay="1.1s">SMA Negeri 52</p>
+			  <!-- Title -->
+			  <h4 class="card-title wow bounceIn" data-wow-delay="1.2s"><i class="fas fa-caret-right" style="color:rgb(255,199,0)"></i> 2010 - 2013</h4>
+			  <!-- Text -->
+			  <p class="card-text wow bounceIn" data-wow-delay="1.3s">MTsN 5</p>
+
 			</div>
+			<!-- Card content_1 -->
+
+		  </div>
+		  <!-- Card_1 -->
+
+		  <!-- Card_2 -->
+		  <div class="card mb-4 wow fadeInUp" data-wow-delay="0.6s">
+
+			<!-- Card image_2 -->
+			<div class="view overlay">
+			  <div class="mh-100 ripe-malinka-gradient white-text text-center" style="height: 50px;">
+			  <h3 class="pt-2"><strong><i class="fas fa-trophy"></i> Experience</strong></h3>
+			  </div>
+			</div>
+
+			<!-- Card content_2 -->
+			<div class="card-body">
+			<!-- Title -->
+			  <h4 class="card-title wow bounceIn" data-wow-delay="1.0s"><i class="fas fa-caret-right" style="color:rgb(255,41,171)"></i> ADMIN AMVINDO</h4>
+			  <!-- Text -->
+			  <p class="card-text wow bounceIn" data-wow-delay="1.1s">AMV Indonesia, Video Editing Community - 2020</p>
+			  <!-- Title -->
+			  <h4 class="card-title wow bounceIn" data-wow-delay="1.2s"><i class="fas fa-caret-right" style="color:rgb(255,41,171)"></i> LEADER OF IDEA</h4>
+			  <!-- Text -->
+			  <p class="card-text wow bounceIn" data-wow-delay="1.3s">Informatics Design Associations, Himatif FMIPA Unpad - 2019</p>
+			  <!-- Title -->
+			  <h4 class="card-title wow bounceIn" data-wow-delay="1.4s"><i class="fas fa-caret-right" style="color:rgb(255,41,171)"></i> SPEAKER - VIDEO EDITING</h4>
+			  <!-- Text -->
+			  <p class="card-text wow bounceIn" data-wow-delay="1.5s">Workshop Forum Media MIPA - 2018</p>
+			  <!-- Title -->
+			  <h4 class="card-title wow bounceIn" data-wow-delay="1.6s"><i class="fas fa-caret-right" style="color:rgb(255,41,171)"></i> STAFF OF DEPARTMENT MEDIA AND INFORMATION</h4>
+			  <!-- Text -->
+			  <p class="card-text wow bounceIn" data-wow-delay="1.7s">Executive Students Council, Himatif FMIPA Unpad - 2017</p>
+
+			</div>
+			<!-- Card content_2 -->
+
+		  </div>
+		  <!-- Card_2 -->
+
+		  <!-- Card_3 -->
+		  <div class="card mb-4 wow fadeInLeft" data-wow-delay="0.4s">
+
+			<!-- Card image_3 -->
+			<div class="view overlay">
+			  <div class="mh-100 purple-gradient white-text text-center" style="height: 50px;">
+			  <h3 class="pt-2"><strong><i class="fas fa-heart"></i> Interest</strong></h3>
+			  </div>
+			</div>
+
+			<!-- Card content_3 -->
+			<div class="card-body">
+
+			  <!-- Title -->
+			  <h4 class="card-title wow bounceIn" data-wow-delay="1.0s"><i class="fas fa-caret-right" style="color:rgb(74,21,156)"></i> DESIGN</h4>
+			  <!-- Text -->
+			  <p class="card-text wow bounceIn" data-wow-delay="1.1s">Video editing, graphic design, motion graphic, and UI/UX</p>
+			  <!-- Title -->
+			  <h4 class="card-title wow bounceIn" data-wow-delay="1.2s"><i class="fas fa-caret-right" style="color:rgb(74,21,156)"></i> MUSIC</h4>
+			  <!-- Text -->
+			  <p class="card-text wow bounceIn" data-wow-delay="1.3s">Playing piano, mix song with software audio editor, and I like beat of the music</p>
+			  <!-- Title -->
+			  <h4 class="card-title wow bounceIn" data-wow-delay="1.4s"><i class="fas fa-caret-right" style="color:rgb(74,21,156)"></i> GAME</h4>
+			  <!-- Text -->
+			  <p class="card-text wow bounceIn" data-wow-delay="1.5s">Playing game with my friends (MOBA, etc), and I like to make a level editor from game</p>
+			
+			</div>
+			<!-- Card content_3 -->
+
+		  </div>
+		  <!-- Card_3 -->
+
 		</div>
-		<script src="js/jquery.tools.min.js"></script>
-		<script src="js/jquery.mobile.custom.min.js"></script>
-		<script src="js/jquery.cm-overlay.js"></script>
-		<script>
-			$(document).ready(function () {
-				$('.cm-overlay').cmOverlay();
-			});
-		</script>
-	</div>
-	<!-- //menu -->
-	<!-- services -->
-	<div class="w3ls-section services" id="services">
+		<!-- CARD GROUP -->
+		
+		
+		
+    </div>
+	
+	<!-- DARK MODE -->
+	<div style="background-color:#121212;">
+		<img class="w-100" src="materials/iyon_solidborder_top.png" image"/>
+		
 		<div class="container">
-			<h3 class="agileits-title text-center">MY OTHER PROJECT (VIDEO)</h3>
 			<center>
-				<div class="videoWrapper">
-					<iframe width="420" height="315" 
-						src="https://www.youtube.com/embed/kf2npbkUfI4" frameborder="0" allowfullscreen>
-					</iframe>
-				</div>
-				<br><br>
-				<a href="https://www.youtube.com/c/IYONAdryanLF" target="_blank">
-					<img border="0" alt="IYONAdryanLF" src="images\iyonyoutube.png" width="125" height="125">
-				</a>
-				<br><br>
-				<span class="fa fa-hand-o-right" aria-hidden="true" style="color:white;" ></span>
-				<a href="https://www.youtube.com/c/IYONAdryanLF" target="_blank" style="color:white; font-size:15px;">My Youtube Channel</a>
-				<span class="fa fa-hand-o-left" aria-hidden="true" style="color:white;" ></span>
+			<img class="w-75 wow bounceIn" data-wow-delay="1.5s" style ="margin-top:50px;" src="materials/iyon_Tvideo.gif" alt="this slowpoke moves" image"/>
 			</center>
 		</div>
+		<div class="container" style ="margin-top:50px;">
+			<div class="row">
+				<!-- Grid column 11111111111111111 -->
+				<div class="col-lg-4 col-md-4 col-sm-4 mb-4">
+
+				<!--Modal: Name-->
+				<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg" role="document">
+
+					<!--Content-->
+					<div class="modal-content">
+
+						<!--Body-->
+						<div class="modal-body mb-0 p-0">
+								<!-- LINK 1 -->
+						<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kf2npbkUfI4"
+							allowfullscreen></iframe>
+						</div>
+
+						</div>
+
+						<!--Footer-->
+						<div class="modal-footer justify-content-center">
+							<button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+						</div>
+
+					</div>
+					<!--/.Content-->
+
+					</div>
+				</div>
+				<!--Modal: Name-->
+				<!-- LINK 1 -->
+				<a><img class="img-fluid z-depth-1 wow fadeInRight" data-wow-delay="0.6s" src="https://i1.ytimg.com/vi/kf2npbkUfI4/sddefault.jpg" alt="video"
+					data-toggle="modal" data-target="#modal1"></a>
+
+				</div>
+				<!-- Grid column 11111111111111111-->
+				
+				<!-- Grid column 22222222222222222 -->
+				<div class="col-lg-4 col-md-4 col-sm-4 mb-4">
+
+				<!--Modal: Name-->
+				<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg" role="document">
+
+					<!--Content-->
+					<div class="modal-content">
+
+						<!--Body-->
+						<div class="modal-body mb-0 p-0">
+								<!-- LINK 2 -->
+						<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/i3tbtJbpYcg"
+							allowfullscreen></iframe>
+						</div>
+
+						</div>
+
+						<!--Footer-->
+						<div class="modal-footer justify-content-center">
+							<button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+						</div>
+
+					</div>
+					<!--/.Content-->
+
+					</div>
+				</div>
+				<!--Modal: Name-->
+				<!-- LINK 2 -->
+				<a><img class="img-fluid z-depth-1 wow jackInTheBox" data-wow-delay="0.6s" src="https://i1.ytimg.com/vi/i3tbtJbpYcg/sddefault.jpg" alt="video"
+					data-toggle="modal" data-target="#modal2"></a>
+
+				</div>
+				<!-- Grid column 22222222222222222-->
+				
+				<!-- Grid column 33333333333333333 -->
+				<div class="col-lg-4 col-md-4 col-sm-4 mb-4">
+
+				<!--Modal: Name-->
+				<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg" role="document">
+
+					<!--Content-->
+					<div class="modal-content">
+
+						<!--Body-->
+						<div class="modal-body mb-0 p-0">
+								<!-- LINK 3 -->
+						<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hRdHqVNPKu0"
+							allowfullscreen></iframe>
+						</div>
+
+						</div>
+
+						<!--Footer-->
+						<div class="modal-footer justify-content-center">
+							<button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+						</div>
+
+					</div>
+					<!--/.Content-->
+
+					</div>
+				</div>
+				<!--Modal: Name-->
+				<!-- LINK 3 -->
+				<a><img class="img-fluid z-depth-1 wow fadeInLeft" data-wow-delay="0.6s" src="https://i1.ytimg.com/vi/hRdHqVNPKu0/sddefault.jpg" alt="video"
+					data-toggle="modal" data-target="#modal3"></a>
+
+				</div>
+				<!-- Grid column 33333333333333333-->
+				
+			</div>
+		</div>
+		
+		<img class="w-100" src="materials/iyon_solidborder_bottom.png" image"/>
 	</div>
-	<!-- //services -->
-	<!-- contact -->
-	<div class="contact-w3-agileits w3ls-section" id="contact">
+	
+	<!-- MINI PROJECT-->
+	
+	<div class="introduction" id="mproject">
 		<div class="container">
-			<h3 class="agileits-title cont-w3l">CONTACT</h3>
-			<div class="contact-main-w3ls">
-				<div class="col-md-6  contact-left-w3ls">
-					<div class="mail contact-grid-agileinfo">
-						<div class="col-md-4 col-sm-4 col-xs-4 contact-icon-wthree">
-							<h4>Mail me</h4>
+			<center>
+			<img class="w-75" src="materials/iyon_logo_ink.png" alt="this slowpoke moves" image"/>
+			</center>
+			<div class="w3l-heading wow fadeInUp" data-wow-delay="0.6s" style ="margin-top:50px;">
+				<h3>MINI PROJECT</h3>
+				<div class="w3ls-border"> </div>
+			</div>
+		
+			<!-- preview 4 project -->
+			
+			<!-- OTHER PROJECT -->
+			
+			<div class ="row" style ="margin-top:50px;">
+				<!-- Card Light 11 -->
+				<div class="col-sm-3">
+					<div class="card wow fadeIn" data-wow-delay="0.4s">
+						<!-- Card image -->
+						<div class="view overlay">
+							<img class="card-img-top"
+							src="materials/g4_.gif" alt="Card image cap">
 						</div>
-						<div class="col-md-8  col-sm-8 col-xs-8 contact-text-agileinfo">
-								<p>faizadryan17@gmail.com</p>
-								<p><br>adryaniyon@gmail.com</p>
+
+						<!-- Card content -->
+						<div class="card-body">
+
+							<!-- Title -->
+							<h4 class="card-title text-center">JagaSehat Apps</h4>
+							<hr>
+							<!-- Text -->
+							<p class="card-text text-center">Splash Screen Animation</p>
 						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="call contact-grid-agileinfo">
-						<div class="col-md-4 col-sm-4 col-xs-4 contact-icon-wthree">
-							<h4>Phone</h4>
-						</div>
-						<div class="col-md-8 col-sm-8 col-xs-8 contact-text-agileinfo">
-							<p>+62-8987817332</p>
-							<p><br></p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="contact-grid-agileinfo">
-						<div class="col-md-4 col-sm-4 col-xs-4 contact-icon-wthree">
-							<h4>Address</h4>
-						</div>
-						<div class="col-md-8 col-sm-8 col-xs-8 contact-text-agileinfo">
-							<p>Komp. Dewa Kembar A/173<br> Sempter Timur<br> Jakarta Utara.
-							</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="visit wthree-social-icons contact-grid-agileinfo">
-						<div class="col-md-4 col-sm-4 col-xs-4 contact-icon-wthree">
-							<h4>Follow me</h4>
-						</div>
-						<div class="col-md-8 col-sm-8 col-xs-8 contact-text-agileinfo">
-							<ul class="w3-links">
-								<li><a href="https://www.facebook.com/adryan.l.faiz" target="_blank"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="https://www.instagram.com/iyonadryanlf" target="_blank"><i class="fa fa-instagram"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/adryanlf/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="https://www.youtube.com/c/IYONAdryanLF" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
-							</ul>
-						</div>
-						<div class="clearfix"></div>
 					</div>
 				</div>
-				<div class="contact-main">
-					<div class="col-md-6 agileits-main-right">
-						<!-- Blank Space -->
+				<!-- Card Light 11 -->
+				<!-- Card Light 22 -->
+				<div class="col-sm-3">
+					<div class="card wow fadeIn" data-wow-delay="0.6s">
+						<!-- Card image -->
+						<div class="view overlay">
+							<img class="card-img-top"
+							src="materials/g9_.gif" alt="Card image cap">
+						</div>
+
+						<!-- Card content -->
+						<div class="card-body">
+
+							<!-- Title -->
+							<h4 class="card-title text-center">Mochi Mochi</h4>
+							<hr>
+							<!-- Text -->
+							<p class="card-text text-center">Mini Game</p>
+						</div>
 					</div>
-					<div class="clearfix"></div>
 				</div>
+				<!-- Card Light 22 -->
+				<!-- Card Light 33 -->
+				<div class="col-sm-3 wow fadeIn" data-wow-delay="0.8s">
+					<div class="card">
+						<!-- Card image -->
+						<div class="view overlay">
+							<img class="card-img-top"
+							src="materials/g11_.gif" alt="Card image cap">
+						</div>
+
+						<!-- Card content -->
+						<div class="card-body">
+
+							<!-- Title -->
+							<h4 class="card-title text-center">2D Cat Animation</h4>
+							<hr>
+							<!-- Text -->
+							<p class="card-text text-center">2D Animation</p>
+						</div>
+					</div>
+				</div>
+				<!-- Card Light 33 -->
+				<!-- Card Light 44 -->
+				<div class="col-sm-3">
+					<div class="card wow fadeIn" data-wow-delay="1.0s">
+						<!-- Card image -->
+						<div class="view overlay">
+							<img class="card-img-top"
+							src="materials/g12_.gif" alt="Card image cap">
+						</div>
+
+						<!-- Card content -->
+						<div class="card-body">
+
+							<!-- Title -->
+							<h4 class="card-title text-center">3D Logo Animation</h4>
+							<hr>
+							<!-- Text -->
+							<p class="card-text text-center">3D Animation</p>
+						</div>
+					</div>
+				</div>
+				<!-- Card Light 44 -->
 			</div>
 		</div>
 	</div>
-	<!-- //contact -->
-	<div class="agileits_w3layouts-footer">
-		<!---
-		<p>© 2017 Designer. All rights reserved | Design by <a href="http://w3layouts.com"> W3layouts.</a></p>
-		-->
+	
+	<!--/.MINI PROJECT-->
+	
+	<!-- AMV -->
+	<div style="background-color:#121212;">
+		<img class="w-100" src="materials/iyon_border_top.gif" image"/>
+		
+		<div class="container">
+			<center>
+			<img class="mh-100 wow bounceIn" data-wow-delay="1.5s"  style="height: 100px; margin-top:50px;" src="materials/amvindologo_white.png" alt="this slowpoke moves" image"/>
+			</center>
+		</div>
+		<div class="container" style ="margin-top:50px;">
+			
+			<div class="row">
+				<div class="col-sm-6">
+					<h3 style="font-size: 2em; font-weight: 700; text-align: left;" class="text-white wow fadeInRight" data-wow-delay="1s">ABOUT 
+					<span class="deep-orange-text">US</span></h3>
+					<p style="color: #f5f5f5; font-size: 1em;line-height: 1.8em;" class="wow fadeInRight" data-wow-delay="1.5s">
+						<strong>AMV Indonesia</strong> adalah sebuah komunitas video editing berbasis
+						clip animasi jepang maupun <i>manga</i>. Komunitas AMV Indonesia
+						beranggotakan pribadi-pribadi kreatif dari berbagai wilayah
+						di Indonesia yang memiliki kesamaan hobi dan ketertarikan
+						akan video editing dan animasi jepang.
+					</p>
+
+				</div>
+				<div class="col-sm-6">
+					<!-- Card -->
+					<div class="card card-image z-depth-3 wow fadeInLeft" style="background-image: url('materials/about_amvindo_bg.jpg');"  data-wow-delay="2s">
+					
+					<div class="text-white text-center d-flex align-items-center rgba-black-strong py-3 px-4">
+						<div class="col">
+							<h5 class="white-text"><i class="fab fa-youtube"></i></h5>
+							<h3 class="card-title pt-2"><strong>AMV INDONESIA</strong></h3>
+							<p>Anime Music Video Community</p>
+							<a href="http://www.youtube.com/c/amvindonesia" class="btn peach-gradient" style="border-radius: 25px;" target="_blank"><i class="fas fa-play left"></i> Check Our Channel</a>
+						</div>
+					</div>
+
+					</div>
+					<!-- Card -->
+				</div>
+			</div>
+			
+		</div>
+		
+		<img class="w-100" src="materials/iyon_border_bottom.gif" image"/>
 	</div>
-	<!-- start-smooth-scrolling -->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
+	
+    <!-- End your project here-->
 
-				$('html,body').animate({
-					scrollTop: $(this.hash).offset().top
-				}, 1000);
-			});
-		});
-	</script>
-	<!-- //end-smooth-scrolling -->
-	<!-- smooth-scrolling-of-move-up -->
-	<script type="text/javascript">
-		$(document).ready(function () {
-			/*
-			var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-			};
-			*/
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript">
+	$( document ).ready(function() {
+	  new WOW().init();
+	});
+  </script>
 
-			$().UItoTop({
-				easingType: 'easeOutQuart'
-			});
-
-		});
-	</script>
-<script type="text/javascript" src="js/SmoothScroll.min.js"></script>
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="js/bootstrap.js"></script>
 </body>
 </html>
