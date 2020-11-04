@@ -1,0 +1,201 @@
+/*!
+INTRODUCTION 
+ */
+ .introduction,.about,.gallery,.team-dot,.news,.contact{
+	padding:4em 0;
+  }
+  .w3l-heading h3{
+    text-align: center;
+    color: #000000;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  .w3ls-border{
+    background: #000000;
+    width: 7%;
+    margin: 3em auto 0;
+    height: 2px;
+  }
+  .introduction-info,.agileits-about-grids,.agileits-team-grids,.wthree-news-grids {
+    margin: 4em 0 0 0;
+  }
+  .introduction-info p{
+	  color: #505050;
+    font-size: .9em;
+    margin: 0 auto;
+    line-height: 1.8em;
+    width: 70%;
+    text-align: center;
+  }
+
+  /*!
+FOOTER 
+ */
+
+ .footer {
+	padding:4em 0;
+  }
+  .w3l-footer h3{
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  .w3ls-footer-border{
+    background: #ffffff;
+    width: 50%;
+    margin: 1em auto 0;
+    height: 2px;
+    
+  }
+  .footer {
+    margin: 4em 0 0 0;
+  }
+  .footer-info p{
+      color: #ffffff;
+    padding-top: 20px;
+    font-size: .8em;
+    margin: 0 auto;
+    line-height: 1.8em;
+    width: 70%;
+    text-align: left;
+  }
+
+   /*!
+Carousel image set PAGE
+ */
+
+ .carousel-cover-image {
+/*Centering in the viewport in CSS level 3*/
+object-fit: cover;
+height: 400px;
+position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 0);
+}
+
+   /*!
+NAVBAR
+ */
+
+ .nav-active
+ {
+    font-weight: bold;
+ }
+
+ .dropdown-menu-center {
+  right: auto;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+  /*!
+BG INTRO
+ */
+
+ body, html {
+    height: 100%;
+  }
+ 
+.bg {
+    /* The image used */
+    background-image: url("materials/bg_iyon_85_000000.jpeg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+ /*
+.bg-cover-jumbotron {
+  
+}
+*/
+
+.edit-profile.active {
+  border-radius: 25px;
+  background-color: #3399FF;
+  color: white;
+  font-weight: bold;
+}
+
+.save {
+  border-radius: 25px;
+  background-color: #3399FF;
+  color: white;
+  font-weight: bold;
+}
+
+.back {
+  border-radius: 25px;
+  background-color: #FF3333;
+  color: white;
+  font-weight: bold;
+}
+
+/*
+Scrollbar Table
+*/
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 200px;
+  overflow: auto;
+}
+.table-wrapper-scroll-y {
+  display: block;
+}
+
+/*
+8 Grid
+*/
+
+.col-xs-8r,
+.col-sm-8r,
+.col-md-8r,
+.col-lg-8r {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-8r {
+    width: 12.5%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-8r {
+        width: 12.5%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-8r {
+        width: 12.5%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-8r {
+        width: 12.5%;
+        float: left;
+    }
+}
