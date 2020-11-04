@@ -2,11 +2,7 @@
 <html>
 <body>
 
-<!--#include virtual="test.ssi" -->
-
-<script>
-
-</script>
+<!--#echo var="DATE_LOCAL"-->
 
 </body>
 </html>
