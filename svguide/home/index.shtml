@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<!--#include file="test.html" -->>
+<!--#include virtual="test.ssi" -->
 
 <script>
 
