@@ -1,3 +1,7 @@
+.dark-mode-on{
+  background-color: #0e0e0e !important;
+}
+
 /*!
 INTRODUCTION 
  */
@@ -6,15 +10,15 @@ INTRODUCTION
   }
   .w3l-heading h3{
     text-align: center;
-    color: #000000;
+    color: #ffffff;
     font-size: 2em;
     font-weight: 700;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     margin: 0;
     letter-spacing: 2px;
   }
   .w3ls-border{
-    background: #000000;
+    background: #ffffff;
     width: 7%;
     margin: 3em auto 0;
     height: 2px;
@@ -23,7 +27,7 @@ INTRODUCTION
     margin: 4em 0 0 0;
   }
   .introduction-info p{
-	  color: #505050;
+	  color: #ffffff;
     font-size: .9em;
     margin: 0 auto;
     line-height: 1.8em;

@@ -1,3 +1,7 @@
+.dark-mode-on{
+  background-color: #0e0e0e !important;
+}
+
 /*!
 INTRODUCTION 
  */
@@ -6,15 +10,15 @@ INTRODUCTION
   }
   .w3l-heading h3{
     text-align: center;
-    color: #000000;
-    font-size: 2em;
+    color: #e28cc4;
+    font-size: 3em;
     font-weight: 700;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     margin: 0;
     letter-spacing: 2px;
   }
   .w3ls-border{
-    background: #000000;
+    background: #ffffff;
     width: 7%;
     margin: 3em auto 0;
     height: 2px;
@@ -23,14 +27,61 @@ INTRODUCTION
     margin: 4em 0 0 0;
   }
   .introduction-info p{
-	  color: #505050;
-    font-size: .9em;
+	  color: #ffffff;
+    font-size: 1.2em;
     margin: 0 auto;
     line-height: 1.8em;
     width: 70%;
     text-align: center;
   }
 
+  .w3l-heading h4{
+    text-align: left;
+    color: #e28cc4;
+    font-size: 1.5em;
+    font-weight: 700;
+    /*text-transform: uppercase;*/
+    margin: 0;
+    letter-spacing: 2px;
+  }
+
+  .introduction-info-2col{
+    text-align: justify;
+    text-align-last: left;
+    color: #ffffff;
+    font-size: 1em;
+    margin: 0 auto;
+    line-height: 1.8em; 
+  }
+
+  .introduction-info-2col a{
+    color: #e28cc4; 
+  }
+
+  .introduction-info-2col a:hover{
+    color: #ffffff; 
+  }
+
+  .video-info p{
+    margin: 2em 0 0 0;
+    color: #ffffff; 
+    font-size: 0.8em;
+    line-height: 1em; 
+    text-align: center;
+  }
+
+
+  /*!
+BUTTON
+*/
+
+.btn-sweetpotato{
+  background-color: #e28cc4;
+  border-radius: 25px;
+  color: white;
+
+  font-size: 1em;
+}
   /*!
 FOOTER 
  */
@@ -137,7 +188,9 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
 
  /*
 .bg-cover-jumbotron {
-  
+ 
+
+ 
 }
 */
 
