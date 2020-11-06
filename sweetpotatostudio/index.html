@@ -142,7 +142,7 @@
     <div class="row justify-content-md-center">
       <div class="col-lg-8 col-md-6">
         <div align="center" class="embed-responsive embed-responsive-16by9">
-          <video controls class="embed-responsive-item">
+          <video class="embed-responsive-item" poster="https://i.ytimg.com/vi/SSaIpf2JVQc/maxresdefault.jpg" controls controlsList="nodownload">
               <source src="asset/image/testvideo.mp4"
                 type="video/mp4">
           </video>
@@ -190,7 +190,75 @@
         </div>
       </div>
     </div>
-    <!-- https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+    
+    <div class="row">
+      <!-- modal 001 -->
+      <div class="col-6 col-md-4">
+        <!-- Button trigger modal 001 -->
+        <a><img class="img-fluid z-depth-1" src="asset/image/img1.webp" alt="modal01"
+          data-toggle="modal" data-target="#centralModal01"></a>
+
+        <!-- Central Modal -->
+        <div class="modal fade" id="centralModal01" tabindex="-1" role="dialog" aria-labelledby="modalLabel01"
+          aria-hidden="true">
+
+          <!-- Change class .modal-  to change the size of the modal -->
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title w-100" id="modalLabel01">Image 01</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="asset/image/img1.webp" class="img-fluid" alt="Responsive image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Central Modal -->
+      </div>
+      <!-- /.modal 001 -->
+
+      <!-- modal 002 -->
+      <div class="col-6 col-md-4">
+        <!-- Button trigger modal 002 -->
+        <div class="wrapper">
+          <div class="widescreen">
+            <div class="content-gallery">
+              <a alt="modal02" data-toggle="modal" data-target="#centralModal02">
+                <!-- <div class="cover-image-gallery" style="--img:url(/iyonadryan.github.io/sweetpotatostudio/asset/image/img2.webp)"></div> -->
+                <div class="cover-image-gallery" style="--img:url(../image/img2.webp)"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Central Modal -->
+        <div class="modal fade" id="centralModal02" tabindex="-1" role="dialog" aria-labelledby="modalLabel02"
+          aria-hidden="true">
+
+          <!-- Change class .modal-  to change the size of the modal -->
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title w-100" id="modalLabel02">Image 02</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="asset/image/img2.webp" class="img-fluid" alt="Responsive image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Central Modal -->
+      </div>
+      <!-- /.modal 002 -->
+
+    </div>
+
   </div>
 </div>
 <!--/.Content-->

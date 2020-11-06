@@ -133,6 +133,55 @@ position: absolute;
         transform: translate(-50%, 0);
 }
 
+  /*!
+Gallery image Cover
+ */
+ /* https://stackoverflow.com/questions/29677792/set-width-according-to-height */
+ /* https://stackoverflow.com/questions/54381244/image-wrapper-css */
+/* the wrapper has a width */
+.wrapper {
+  position: relative;
+  width: 100%;
+  
+}
+/* these elements set the height (using padding-bottom) */
+.square {
+  padding-bottom: 100%;
+  position: relative;
+}
+.widescreen {
+  padding-bottom: 56.25%; /* 9/16 = 0.5625 */
+}
+
+/* 
+ * This is the content. 
+ * Needs position:absolute to not add to the width of the parent 
+ */
+.content-gallery {
+  /* fill parent */
+  position: absolute;  
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  
+}
+
+.cover-image-gallery{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: 
+    var(--img) center/cover; /* read from this file location*/
+  border-radius: 25px;
+  box-shadow: 
+   0 5px 10px 0px rgba(0,0,0,0.22), 
+   0 10px 13px 0px rgba(0,0,0,0.34), 
+   inset 0 18px 18px 0 rgba(255,255,255,0.35), 
+   inset 0 -18px 18px 0 rgba(0,0,0,0.10);
+}
+
+
+
+
    /*!
 NAVBAR
  */
