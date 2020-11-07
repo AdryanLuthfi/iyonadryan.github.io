@@ -82,6 +82,11 @@ BUTTON
 
   font-size: 1em;
 }
+
+.btn-sweetpotato-footer{
+  background-color: #e28cc4;
+  color: white;
+}
   /*!
 FOOTER 
  */
@@ -117,6 +122,13 @@ FOOTER
     width: 70%;
     text-align: left;
   }
+
+.sosmed-member{
+  text-align: center;
+  word-spacing: 20px;
+  font-weight: 100;
+  color:white;
+}
 
    /*!
 Carousel image set PAGE
@@ -171,7 +183,7 @@ Gallery image Cover
   height: 100%;
   background: 
     var(--img) center/cover; /* read from this file location*/
-  border-radius: 25px;
+  border-radius: 10px;
   box-shadow: 
    0 5px 10px 0px rgba(0,0,0,0.22), 
    0 10px 13px 0px rgba(0,0,0,0.34), 
