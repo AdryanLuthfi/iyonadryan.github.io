@@ -215,6 +215,14 @@ NAVBAR
 }
 
  
+/*
+  FORM CONTACT
+*/
+
+.form-sweetpotato label{
+  color:#e28cc4;
+}
+
 /* ANIMATION Top and Bottom borders go out */
 div.topBotomBordersOut a:before, div.topBotomBordersOut a:after
 {

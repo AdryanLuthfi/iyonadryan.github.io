@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Contact</title>
+    <!-- icon -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <div w3-include-html="../header.html"></div>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/3205/",
+				type:"post",
+				data:$("#contactForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted")
+				},
+				error: function(){
+					alert("There was an error")
+				}
+			});
+		}
+	</script>
+</head>
+<body class="dark-mode-on">
+    <!-- Start your project here-->
+    <header>
+        <div w3-include-html="../navbar.html"></div>
+    </header>
+
+    <div class="introduction">
+		<div class="container">
+			<div class="w3l-heading wow fadeInUp" data-wow-delay="0.6s">
+				<h3>Contact</h3>
+			</div>
+			<div class="introduction-info wow fadeInUp" data-wow-delay="0.6s">
+				<p class="mb-4">
+                    sweetpotato1819@gmail.com
+                </p>
+			</div>
+		</div>
+    </div>
+    <div class="container">
+
+        <form id="contactForm" class="form-sweetpotato">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Name</label>
+                    <input class="form-control" name="name" placeholder="Name"> 
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Email</label>
+                    <input class="form-control" name="email" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Phone</label>
+                    <input class="form-control"name="phone" placeholder="Phone">  
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Address</label>
+                    <input class="form-control" name="address" placeholder="Address"> 
+                </div>
+              </div>
+            <div class="form-group">
+                <label>Subject</label>
+                <input class="form-control" name="subject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea class="form-control" rows="3" name="message" placeholder="Message"></textarea>          
+            </div>
+        </form>
+
+        <button class="btn btn-sweetpotato-footer btn-block mb-4" onclick='SubForm()'>S U B M I T</button>
+
+    </div>
+    <!-- End your project here-->
+	
+    <!-- Footer-->
+    <footer>
+        <div w3-include-html="../footer.html"></div>
+    </footer>
+    <!--/.Footer-->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="/iyonadryan.github.io/sweetpotatostudio/js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="/iyonadryan.github.io/sweetpotatostudio/js/popper.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="/iyonadryan.github.io/sweetpotatostudio/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="/iyonadryan.github.io/sweetpotatostudio/js/mdb.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript">
+    $( document ).ready(function() {
+        new WOW().init();
+    });
+    </script>
+    <script>
+    w3.includeHTML();
+    </script>
+   
+
+</body>
+</html>
