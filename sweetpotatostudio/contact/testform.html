@@ -15,17 +15,31 @@
 		crossorigin="anonymous"></script>
 	<script>
 		function SubForm (){
-			$.ajax({
-				url:"https://api.apispreadsheets.com/data/3205/",
-				type:"post",
-				data:$("#contactForm").serializeArray(),
-				success: function(){
-					alert("Form Data Submitted")
-				},
-				error: function(){
-					alert("There was an error")
-				}
-			});
+            var xname, xemail, xphone, xaddress, xsubject, xmessage;
+            // Get the value of the input field
+            xname = document.getElementById("fname").value;
+            xemail = document.getElementById("femail").value;
+            xphone = document.getElementById("fphone").value;
+            xaddress = document.getElementById("faddress").value;
+            xsubject = document.getElementById("fsubject").value;
+            xmessage = document.getElementById("fmessage").value;
+            if (xname == "" || xemail == "" || xphone == "" || xaddress == "" || xsubject == "" || xmessage == ""){
+                alert("Form must be filled out");
+            }
+            else {
+                $.ajax({
+                    url:"https://api.apispreadsheets.com/data/3205/",
+                    type:"post",
+                    data:$("#contactForm").serializeArray(),
+                    success: function(){
+                        alert("Form Data Submitted"),
+                        location.replace("/iyonadryan.github.io/sweetpotatostudio/contact/")
+                    },
+                    error: function(){
+                        alert("There was an error")
+                    }
+                });
+            }
 		}
 	</script>
 </head>
@@ -53,30 +67,30 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label>Name</label>
-                    <input class="form-control" name="name" placeholder="Name"> 
+                    <input class="form-control" name="name" placeholder="Name" id="fname"> 
                 </div>
                 <div class="form-group col-md-6">
                     <label>Email</label>
-                    <input class="form-control" name="email" placeholder="Email">
+                    <input class="form-control" name="email" placeholder="Email" id="femail">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label>Phone</label>
-                    <input class="form-control"name="phone" placeholder="Phone">  
+                    <input class="form-control"name="phone" placeholder="Phone" id="fphone">  
                 </div>
                 <div class="form-group col-md-6">
                     <label>Address</label>
-                    <input class="form-control" name="address" placeholder="Address"> 
+                    <input class="form-control" name="address" placeholder="Address" id="faddress"> 
                 </div>
               </div>
             <div class="form-group">
                 <label>Subject</label>
-                <input class="form-control" name="subject" placeholder="Subject">
+                <input class="form-control" name="subject" placeholder="Subject" id="fsubject">
             </div>
             <div class="form-group">
                 <label>Message</label>
-                <textarea class="form-control" rows="3" name="message" placeholder="Message"></textarea>          
+                <textarea class="form-control" rows="3" name="message" placeholder="Message" id="fmessage"></textarea>          
             </div>
         </form>
 
