@@ -1,0 +1,277 @@
+:root {
+  --agnes-gradient-1: #f857a6;
+  --agnes-gradient-2: #ff5858; 
+  
+  --laura-gradient-1: #4568DC;
+  --laura-gradient-2: #B06AB3; 
+  
+  --sukie-gradient-1: #649173;
+  --sukie-gradient-2: #DBD5A4; 
+}
+
+@font-face {
+  font-family: 'MyWebFont';
+  /*src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: /*url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       /*url('webfont.woff2') format('woff2'),  /*Super Modern Browsers */
+       /*url('webfont.woff') format('woff'),  /*Pretty Modern Browsers */
+       url('../font/poppins/Poppins-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+       /*url('webfont.svg#svgFontName') format('svg');  /*Legacy iOS */
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+.bg-witchnesia {
+  /* The image used */
+  background-image: 
+  linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(255,255,255,1)),
+  url("../bg/bg1.webp");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.witch-category {
+  background-color: black;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+  border: 3px solid white;
+  border-radius: 25px;
+}
+
+/* Page Witch Only */
+
+.witch-name-agnes {
+	font-family: 'MyWebFont', Fallback, sans-serif;
+	font-weight: 900;
+	font-size: 60px;
+	background: linear-gradient(to right, var(--agnes-gradient-1) 0%, var(--agnes-gradient-2)  100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	line-height: 100%;
+}
+
+.witch-name-laura {
+	font-family: 'MyWebFont', Fallback, sans-serif;
+	font-weight: 900;
+	font-size: 60px;
+	background: linear-gradient(to right, var(--laura-gradient-1) 0%, var(--laura-gradient-2)  100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	line-height: 100%;
+}
+
+.witch-name-sukie {
+	font-family: 'MyWebFont', Fallback, sans-serif;
+	font-weight: 900;
+	font-size: 60px;
+	background: linear-gradient(to right, var(--sukie-gradient-1) 0%, var(--sukie-gradient-2)  100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	line-height: 100%;
+}
+
+/* https://uxplanet.org/how-to-customize-bootstrap-b8078a011203*/
+/* Override -> just add all class in the (input from bootstrap class)<div>*/
+.nav-link-agnes.nav-link.active {
+	background: linear-gradient(to right, var(--agnes-gradient-1) 0%, var(--agnes-gradient-2)  100%);
+}
+
+.nav-link-laura.nav-link.active {
+	background: linear-gradient(to right, var(--laura-gradient-1) 0%, var(--laura-gradient-2)  100%);
+}
+
+.nav-link-sukie.nav-link.active {
+	background: linear-gradient(to right, var(--sukie-gradient-1) 0%, var(--sukie-gradient-2)  100%);
+}
+
+.nav-link-skill.nav-link{
+	border-radius: 50px;
+	height: 8vh;
+	padding: 0px 0px 0px 0px;
+}
+
+.nav-link-skill.nav-link.skill-agnes.active {
+	background: linear-gradient(to right, var(--agnes-gradient-1) 0%, var(--agnes-gradient-2)  100%);
+}
+
+.nav-link-skill.nav-link.skill-laura.active {
+	background: linear-gradient(to right, var(--laura-gradient-1) 0%, var(--laura-gradient-2)  100%);
+}
+
+.nav-link-skill.nav-link.skill-sukie.active {
+	background: linear-gradient(to right, var(--sukie-gradient-1) 0%, var(--sukie-gradient-2)  100%);
+}
+
+
+/* https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
+@media screen and (min-width: 1200px) {
+	nav {
+		height: 10vh;
+	}
+	
+	.witch-name{
+		height: 10vh;
+	}
+	
+	.witch-category {
+		width: 25%;
+	}
+	
+	.content-witch-character{
+		height: 35vh;
+		width: 80%;
+	}
+	
+	.image-witch-character{
+		height: 80vh;
+	}
+	
+	/* Chara Fix Position Show Witch*/
+	.agnes{
+		left: -75px;
+	}
+	
+	.laura{
+		left: -25px;
+	}
+	
+	.sukie{
+		
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.witch-name{
+		height: 20vh;
+	}
+}
+		
+/* https://gradientbuttons.colorion.co/ */
+.btn-grad-agnes {background-image: linear-gradient(to right, var(--agnes-gradient-1) 0%, var(--agnes-gradient-2)  51%, var(--agnes-gradient-1)  100%)}
+.btn-grad-agnes {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 25px;
+    display: block;
+}
+
+.btn-grad-agnes:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+          
+.btn-grad-laura {background-image: linear-gradient(to right, var(--laura-gradient-1) 0%, var(--laura-gradient-2)  51%, var(--laura-gradient-1)  100%)}
+.btn-grad-laura {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 25px;
+    display: block;
+}
+
+.btn-grad-laura:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+         
+.btn-grad-sukie {background-image: linear-gradient(to right, var(--sukie-gradient-1) 0%, var(--sukie-gradient-2)  51%, var(--sukie-gradient-1) 100%)}
+.btn-grad-sukie {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 25px;
+    display: block;
+}
+
+.btn-grad-sukie:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.btn-grad-white {background-image: linear-gradient(to right, #E0EAFC 0%, #CFDEF3  51%, #E0EAFC  100%)}
+.btn-grad-white {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 25px;
+    display: block;
+}
+
+.btn-grad-white:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: black;
+    text-decoration: none;
+}
+         
+         
+/* Animation Keyframe */
+.animation-fade-in-down {
+	position: relative;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation: fade-in-down 2s forwards;
+	/*Start From Zero*/
+	opacity: 0;
+}
+		 
+@keyframes fade-in-down {
+	0% {top: -50px; opacity: 0;}
+	60% {top: 5px; opacity: 0.75;}
+	100% {top: 0px; opacity: 1;}
+}
+
+.animation-fade-in-from-left {
+	position: relative;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation: fade-in-from-left 2s forwards;
+	/*Start From Zero*/
+	opacity: 0;
+}
+		 
+@keyframes fade-in-from-left {
+	0% {left: -50px; opacity: 0;}
+	60% {left: 5px; opacity: 0.75;}
+	100% {left: 0px; opacity: 1;}
+}
+		 
