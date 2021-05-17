@@ -38,6 +38,26 @@ body {
   background-size: cover;
 }
 
+.bg-witchnesia-home {
+  /* The image used */
+  background-image: 
+  linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(0,0,0,0.5)),
+  url("../bg/bg1.webp");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-witch{
+	height: 85vh;
+	width: 95vw;
+}
+
 .witch-category {
   background-color: black;
   font-weight: 700;
@@ -85,6 +105,10 @@ body {
 
 /* https://uxplanet.org/how-to-customize-bootstrap-b8078a011203*/
 /* Override -> just add all class in the (input from bootstrap class)<div>*/
+a.nav-link.active{
+	font-weight: bold;
+}
+
 .nav-link-agnes.nav-link.active {
 	background: linear-gradient(to right, var(--agnes-gradient-1) 0%, var(--agnes-gradient-2)  100%);
 }
@@ -117,6 +141,17 @@ body {
 
 
 /* https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
+
+@media screen and (min-width: 1400px) {
+	.home-witch{
+		left: -100px;
+	}
+	
+	.home-content{
+		height: 85vh;
+	}
+}
+
 @media screen and (min-width: 1200px) {
 	nav {
 		height: 10vh;
@@ -273,5 +308,19 @@ body {
 	0% {left: -50px; opacity: 0;}
 	60% {left: 5px; opacity: 0.75;}
 	100% {left: 0px; opacity: 1;}
+}
+
+.animation-fade-in {
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation: fade-in 2s forwards;
+	/*Start From Zero*/
+	opacity: 0;
+}
+		 
+@keyframes fade-in {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
 }
 		 
