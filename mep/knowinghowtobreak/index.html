@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="icon" href="iyon_logo.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<link rel="stylesheet" href="iyon.css" />
+	<title>MEP</title>
+	<style>
+		::-webkit-scrollbar {
+		  width: 5px;
+		}
+		::-webkit-scrollbar-track {
+		  box-shadow: inset 0 0 5px grey; 
+		  border-radius: 10px;
+		}
+		::-webkit-scrollbar-thumb {
+		  background: linear-gradient(0deg, rgba(203,121,121,1) 0%, rgba(203,191,121,1) 33%, rgba(121,203,202,1) 66%, rgba(119,161,211,1) 100%);
+		  border-radius: 10px;
+		}
+		::-webkit-scrollbar-thumb:hover {
+		  background: linear-gradient(0deg, rgb(161, 61, 61) 0%, rgb(155, 140, 58) 33%, rgb(49, 139, 138)66%, rgb(33, 81, 139) 100%);
+		}
+	</style>
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+</head>
+<body>
+	<div class="parallax-header">	
+		<img src="bg-header.png" class="parallax-bg object" data-value="1" alt="-bg">
+		<div class="parallax-wrapper">
+            <video class="parallax-img object" data-value="3" autoplay loop muted>
+                <source src="2d-iyonAnimation.webm" type="video/webm">
+            </video>
+        </div>
+		<div class="header-grad"></div>
+	</div>
+	<div class="content">
+		<div class="container">
+			<div class="mep-header">MULTI EDITOR PROJECT</div>
+			<div class="mep-title">Knowing How To Break</div>
+			<div class="mep-header">ABOUT MEP</div>
+			<div class="about-container">
+				<div class="about-card">
+					<div class="about-name">
+						<h3>HOST</h3>
+					</div>
+					<div class="about-details">
+						<div class="about-content">
+							<img src="iyon_logo.png" alt="iyon" width="100" height="100">
+							<p>IYON AdryanLF</p>
+							<br>
+							<img src="amvindo-logo-white.png" alt="iyon" width="90" height="30">
+							<p>#partofamvindo</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-card">
+					<div class="about-name">
+						<h3>STATUS</h3>
+					</div>
+					<div class="about-details">
+						<div class="about-content">
+							<h3>( 0 / 15 )</h3>
+							<p>SLOT</p>
+							<h3>( 0 / 15 )</h3>
+							<p>WIP</p>
+							<h3>( 0 / 15 )</h3>
+							<p>DONE</p>
+						</div>
+					</div>
+				</div>	
+				<div class="about-card">
+					<div class="about-name">
+						<h3>DETAIL</h3>
+					</div>
+					<div class="about-details">
+						<div class="about-content">
+							<h5>Theme : </h5>
+							<p>All About Beautiful Relationship</p>
+							<h5>Genre : </h5>
+							<p>Romance/Drama</p>
+							<h5>Style : </h5>
+							<p>RawFx </p>
+							<h5>Material : </h5>
+							<p>Anime/PV </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mep-header">RULE</div>
+			<br>
+			<p>&#9830; Resolusi 16:9, Minimal 720p & 30fps, format usahakan mp4 atau sejenisnya yang bisa diread software video editor</p>
+			<p>&#9830; Lebihkan 20 frame diakhir untuk transisi part sebelah</p>
+			<p>&#9830; Dilarang menggunakan bar atas bawah diakhir atau diawal part untuk mensinkronisasi transisi part</p>
+			<p>&#9830; Usahakan anime gak boleh sama</p>
+			<p>&#9830; Show Your Best Scene, let this melody flow in your part ^^</p>
+			<p>&#9830; Kalo ada apa2 atau kesulitan langsung berkabar yauw. Ku bakal bantu sebisa mungkin</p>
+			<p>&#9830; Kalau ada perubahan karena kondisi tertentu bakal dikabarin</p>
+			<p>&#9830; Dont forget to respect ke semua editor. Saling support. Kita semua sama-sama belajar</p>
+			<p>&#9830; Ganbatte Kudasai :3</p>
+			<div class="mep-header">MORE INFO</div>
+			<br>
+			<center>
+				<p>&#9873; Deathline : - coming soon &#9873;</p>
+				<p>&#9728; MEP Opened : ? Agustus 2021 &#9728;</p>
+				<p>&#9733; MEP Release : -coming soon &#9733;</p>
+			</center>
+			<div class="mep-header">PART</div>
+			<br>
+			<video width="100%" controls loop poster="part/poster.jpeg">
+				<source src="part/knowinghowtobreak-part.mp4" type="video/mp4">
+				Your browser does not support HTML video.
+			</video>
+			<br>
+			<table class="table table-dark table-bordered table-hover">
+				<thead>
+				  <tr style="background-color: rgb(11, 15, 27);">
+					<th scope="col" class="text-center">Part</th>
+					<th scope="col" class="text-center">Nickname</th>
+					<th scope="col" class="text-center">Anime/PV</th>
+					<th scope="col" class="text-center">Social Media</th>
+					<th scope="col" class="text-center">Status</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<th scope="row" class="text-center">1 
+						<a href="part/part-01.mp3" target="_blank" download>
+							<i class="fa fa-download" style="padding-left: 10px;"aria-hidden="true"></i></a>
+					</th>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="text-info">Open Slot</td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="text-center">2 
+						<a href="part/part-02.mp3" target="_blank" download>
+							<i class="fa fa-download" style="padding-left: 10px;"aria-hidden="true"></i></a>
+					</th>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="text-info">Open Slot</td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="text-center">3 
+						<a href="part/part-03.mp3" target="_blank" download>
+							<i class="fa fa-download" style="padding-left: 10px;"aria-hidden="true"></i></a>
+					</th>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="text-info">Open Slot</td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="text-center">4 
+						<a href="part/part-04.mp3" target="_blank" download>
+							<i class="fa fa-download" style="padding-left: 10px;"aria-hidden="true"></i></a>
+					</th>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="text-info">Open Slot</td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="text-center">5 
+						<a href="part/part-05.mp3" target="_blank" download>
+							<i class="fa fa-download" style="padding-left: 10px;"aria-hidden="true"></i></a>
+					</th>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="text-info">Open Slot</td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="text-center">6 
+						<a href="part/part-06.mp3" target="_blank" download>
+							<i class="fa fa-download" style="padding-left: 10px;"aria-hidden="true"></i></a>
+					</th>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="text-info">Open Slot</td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="text-center">7 
+						<a href="part/part-07.mp3" target="_blank" download>
+							<i class="fa fa-download" style="padding-left: 10px;"aria-hidden="true"></i></a>
+					</th>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="text-info">Open Slot</td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="text-center">8 
+						<a href="part/part-08.mp3" target="_blank" download>
+							<i class="fa fa-download" style="padding-left: 10px;"aria-hidden="true"></i></a>
+					</th>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="text-info">Open Slot</td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="text-center">9 
+						<a href="part/part-09.mp3" target="_blank" download>
+							<i class="fa fa-download" style="padding-left: 10px;"aria-hidden="true"></i></a>
+					</th>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="text-info">Open Slot</td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="text-center">10 
+						<a href="part/part-10.mp3" target="_blank" download>
+							<i class="fa fa-download" style="padding-left: 10px;"aria-hidden="true"></i></a>
+					</th>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="text-info">Open Slot</td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="text-center">11 
+						<a href="part/part-11.mp3" target="_blank" download>
+							<i class="fa fa-download" style="padding-left: 10px;"aria-hidden="true"></i></a>
+					</th>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="text-info">Open Slot</td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="text-center">12 
+						<a href="part/part-12.mp3" target="_blank" download>
+							<i class="fa fa-download" style="padding-left: 10px;"aria-hidden="true"></i></a>
+					</th>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="text-info">Open Slot</td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="text-center">13 
+						<a href="part/part-13.mp3" target="_blank" download>
+							<i class="fa fa-download" style="padding-left: 10px;"aria-hidden="true"></i></a>
+					</th>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="text-info">Open Slot</td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="text-center">14 
+						<a href="part/part-14.mp3" target="_blank" download>
+							<i class="fa fa-download" style="padding-left: 10px;"aria-hidden="true"></i></a>
+					</th>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="text-info">Open Slot</td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="text-center">15 
+						<a href="part/part-15.mp3" target="_blank" download>
+							<i class="fa fa-download" style="padding-left: 10px;"aria-hidden="true"></i></a>
+					</th>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td class="text-info">Open Slot</td>
+				  </tr>
+				  <tr>
+					<th scope="row" class="text-center">Credit</th>
+					<td>IYON AdryanLF</td>
+					<td>Various Mix</td>
+					<td>
+						<a href="https://www.facebook.com/adryan.l.faiz/" class="fa fa-facebook-square part-sosmed-fb" aria-hidden="true" target="_blank"></a>
+						<a href="https://www.youtube.com/c/IYONadryanLF" class="fa fa-youtube-play part-sosmed-yt" aria-hidden="true" target="_blank"></a>
+						<a href="https://www.instagram.com/iyonadryanlf/" class="fa fa-instagram part-sosmed-ig" aria-hidden="true" target="_blank"></a>
+					</td>
+					<td>Start</td>
+				  </tr>
+				</tbody>
+			</table>
+
+			<div class="mep-header">TAG PART</div>
+			<br><br>
+			<form class="was-validated" id="tagPartForm" name="tagPartForm">
+				<div class="form-row">
+					<div class="col-md-6 mb-6">
+						<label for="nickname">Nickname<span class="text-danger"> *</span></label>
+						<input type="text" class="form-control is-valid" id="nickname" name="nickname" placeholder="Nickname" value="" required>
+					</div>
+					<div class="col-md-6 mb-6">
+						<label for="anime">Anime/PV<span class="text-danger"> *</span></label>
+						<input type="text" class="form-control is-valid" id="anime" name="anime" placeholder="Tag Anime/PV" value="" required>
+					</div>
+				</div>
+				<br>
+				<center>
+				<label >Choose Top 3 Parts</label>
+				</center>
+				<div class="form-row">
+					<div class="col-md-4 mb-4">
+						<label >First Tag<span class="text-danger"> *</span></label>
+						<select class="custom-select" name="firstTag" required>
+							<option value="">Choose Part</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+						<!-- <div class="invalid-feedback">Must Open Slot</div> -->
+				  	</div>
+					<div class="col-md-4 mb-4">
+						<label >Second Tag<span class="text-danger"> *</span></label>
+						<select class="custom-select" name="secondTag" required>
+							<option value="">Choose Part</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+						<!-- <div class="invalid-feedback">Must Open Slot</div> -->
+				  	</div>
+					<div class="col-md-4 mb-4">
+						<label >Third Tag<span class="text-danger"> *</span></label>
+						<select class="custom-select" name="thirdTag" required>
+							<option value="">Choose Part</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+						<!-- <div class="invalid-feedback">Must Open Slot</div> -->
+				  	</div>
+				</div>
+				<center>
+					<label >Social Media (Min: 1)</label>
+				</center>
+				<div class="form-row">
+					<div class="col-md-4 mb-4">
+					  <label for="validationFacebook">Facebook</label>
+					  <input type="text" class="form-control" id="validationFacebook" name="socmed-fb" placeholder="https://www.facebook.com/">
+					</div>
+					<div class="col-md-4 mb-4">
+					  <label for="validationYoutube">Youtube</label>
+					  <input type="text" class="form-control" id="validationYoutube" name="socmed-yt" placeholder="https://www.youtube.com/">
+					</div>
+					<div class="col-md-4 mb-4">
+					  <label for="validationInstagram">Instagram</label>
+					  <input type="text" class="form-control" id="validationInstagram" name="socmed-ig" placeholder="https://www.instagram.com/">
+					</div>
+				</div>
+				<center>
+				<button class="btn btn-success btn-grad" type="submit">Submit</button>
+				</center>
+			</form>
+			<div class="mep-header">INSPIRATION (RAW FX)</div>
+			<br>
+			<div class="row">
+				<div class="col-md-4 mb-4">
+					<a href="https://youtu.be/ZEw07SNqWK8" target="_blank"><img src="https://i.ytimg.com/vi/ZEw07SNqWK8/maxresdefault.jpg" class="img-fluid rounded" alt="inspiration" ></a>
+				</div>
+				<div class="col-md-4 mb-4">
+					<a href="https://youtu.be/NUak8I3Quvk" target="_blank"><img src="https://i.ytimg.com/vi/NUak8I3Quvk/maxresdefault.jpg" class="img-fluid rounded" alt="inspiration" ></a>
+				</div>
+				<div class="col-md-4 mb-4">
+					<a href="https://youtu.be/3hN8bLlF9HI" target="_blank"><img src="https://i.ytimg.com/vi/3hN8bLlF9HI/maxresdefault.jpg" class="img-fluid rounded" alt="inspiration" ></a>
+				</div>
+				<div class="w-100"></div>
+				<div class="col-md-4 mb-4">
+					<a href="https://youtu.be/AOxqMyIpsLA" target="_blank"><img src="https://i.ytimg.com/vi/AOxqMyIpsLA/maxresdefault.jpg" class="img-fluid rounded" alt="inspiration" ></a>
+				</div>
+				<div class="col-md-4 mb-4">
+					<a href="https://youtu.be/9GJwEWJUSAY" target="_blank"><img src="inspiration/fatedmelody.jpeg" class="img-fluid rounded" alt="inspiration" ></a>
+				</div>
+				<div class="col-md-4 mb-4">
+					<a href="https://youtu.be/euLtl7e25Cs" target="_blank"><img src="https://i.ytimg.com/vi/euLtl7e25Cs/maxresdefault.jpg" class="img-fluid rounded" alt="inspiration" ></a>
+				</div>
+			</div>
+			<div class="mep-header">LIST TAG</div>
+			<br>
+			<table class="table table-dark table-bordered table-hover">
+				<thead>
+					<tr style="background-color: rgb(11, 15, 27);">
+						<th scope="col" colspan="2" class="text-center">Editor</th>
+						<th scope="col" colspan="3"  class="text-center">Tag Part</th>
+						<th scope="col" colspan="3"  class="text-center">Social Media</th>
+					</tr>
+					<tr style="background-color: rgb(11, 15, 27);">
+						<th scope="col" class="text-center">Nickname</th>
+						<th scope="col" class="text-center">Anime/PV</th>
+						<th scope="col" class="text-center">First</th>
+						<th scope="col" class="text-center">Second</th>
+						<th scope="col" class="text-center">Third</th>
+						<th scope="col" class="text-center">FB</th>
+						<th scope="col" class="text-center">YT</th>
+						<th scope="col" class="text-center">IG</th>
+					</tr>
+				</thead>
+				<tbody class="text-center" id="list_tag">
+					<tr>
+						<td>Editor Name</td>
+						<td>Tag Anime/PV</td>
+						<td>part 1</td>
+						<td>part 2</td>
+						<td>part 3</td>
+						<td>
+							<a href="https://www.facebook.com/" class="fa fa-facebook-square part-sosmed-fb" aria-hidden="true" target="_blank"></a>
+						</td>
+						<td>
+							<a href="https://www.youtube.com/" class="fa fa-youtube-play part-sosmed-yt" aria-hidden="true" target="_blank"></a>
+						</td>
+						<td>
+							<a href="https://www.instagram.com/" class="fa fa-instagram part-sosmed-ig" aria-hidden="true" target="_blank"></a>
+						</td>
+					</tr> 
+				</tbody>
+			</table>
+		</div>
+		<br>
+	</div>
+	<div class="image-footer"></div>
+	<div class="bottom-credit">IYON AdryanLF</div>
+	<script type="text/javascript">
+		var firebaseConfig = {
+			apiKey: "AIzaSyCUx0o8qB7xdBkWgNmwBmasAwQuGXZIfDg",
+			authDomain: "iyon-mep.firebaseapp.com",
+			databaseURL: "https://iyon-mep-default-rtdb.firebaseio.com",
+			projectId: "iyon-mep",
+			storageBucket: "iyon-mep.appspot.com",
+			messagingSenderId: "751584556775",
+			appId: "1:751584556775:web:33358bfb8f40db7917d442",
+			measurementId: "G-WY17ZYCGP0"
+		};
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+		var database_key = firebase.database().ref('knowinghowtobreak').push().key;
+		document.getElementById('tagPartForm').onsubmit = function () {
+			firebase.database().ref("knowinghowtobreak").child(database_key).set({
+                nickname: document.forms["tagPartForm"]["nickname"].value,
+                anime: document.forms["tagPartForm"]["anime"].value,
+				firstTag: document.forms["tagPartForm"]["firstTag"].value,
+				secondTag: document.forms["tagPartForm"]["secondTag"].value,
+				thirdTag: document.forms["tagPartForm"]["thirdTag"].value,
+				fb: document.forms["tagPartForm"]["socmed-fb"].value,
+				yt: document.forms["tagPartForm"]["socmed-yt"].value,
+				ig: document.forms["tagPartForm"]["socmed-ig"].value
+            }, (error) => {
+			if (error) {
+				console.log(error);
+			} else {
+				console.log("success");
+			}
+			});
+			alert("Thanks For Submit ^^ You can see your entry at the bottom this website to confirm");
+		};
+
+		// read data -> read:true
+        console.log("ReadData - knowinghowtobreak");
+        var readEditors = firebase.database().ref('knowinghowtobreak');
+        readEditors.on('value', (snapshot) => {
+            if(snapshot.val()){
+                //console.log(snapshot.val());
+            } else {
+                console.log('/whatever/whateverProperty node does not exist!');
+            }
+			const tbodyListTag = document.getElementById('list_tag');
+            tbodyListTag.innerHTML = '';
+			snapshot.forEach(function(childSnapshot) {
+                var editor_nickname = childSnapshot.child("nickname").val().toString();
+				var editor_anime = childSnapshot.child("anime").val().toString();
+				var editor_firstTag = childSnapshot.child("firstTag").val().toString();
+				var editor_secondTag = childSnapshot.child("secondTag").val().toString();
+				var editor_thirdTag = childSnapshot.child("thirdTag").val().toString();
+				var editor_fb = childSnapshot.child("fb").val();
+				var editor_yt = childSnapshot.child("yt").val();
+				var editor_ig = childSnapshot.child("ig").val();
+				if (editor_fb != "") editor_fb = '<a href="' + childSnapshot.child("fb").val() + '" class="fa fa-facebook-square part-sosmed-fb" aria-hidden="true" target="_blank"></a>';
+				if (editor_yt != "") editor_yt = '<a href="' + childSnapshot.child("yt").val() + '" class="fa fa-youtube-play part-sosmed-yt" aria-hidden="true" target="_blank"></a>';
+				if (editor_ig != "") editor_ig = '<a href="' + childSnapshot.child("ig").val() + '" class="fa fa-instagram part-sosmed-ig" aria-hidden="true" target="_blank"></a>';
+				tbodyListTag.innerHTML += '<tr>' + 
+                        '<td>' +  editor_nickname + '</td>' +
+                        '<td>' + editor_anime + '</td>' +
+                        '<td>' + editor_firstTag + '</td>' +
+						'<td>' + editor_secondTag + '</td>' +
+						'<td>' + editor_thirdTag + '</td>' + 
+						'<td>' + editor_fb + '</td>' + 
+						'<td>' + editor_yt + '</td>' + 
+						'<td>' + editor_ig + '</td>' + 
+					'</tr>';
+            });
+        }, function(error) {
+            // The Promise was rejected.
+            console.log(error);
+        });
+		document.addEventListener("mousemove", parallax);
+        function parallax(e){
+            document.querySelectorAll(".object").forEach(function(move){
+                var moving_value = move.getAttribute("data-value");
+                var win = window,
+                    doc = document,
+                    docElem = doc.documentElement,
+                    body = doc.getElementsByTagName('body')[0],
+                    x_window = win.innerWidth || docElem.clientWidth || body.clientWidth,
+                    y_window = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
+                var x = ((e.clientX - (x_window/2)) * moving_value) / 200;
+                var y = ((e.clientY - (y_window/2)) * moving_value) / 200;
+                move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+            });
+        }
+    </script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

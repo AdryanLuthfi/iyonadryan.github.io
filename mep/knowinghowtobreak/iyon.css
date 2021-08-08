@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+	font-family: 'Poppins';
+	overflow-x: hidden;
+}
+
+.parallax-header{
+	position: relative;
+	height: 75vh;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.parallax-bg{
+	position: absolute;
+	float:left;
+	/*ParallaxFX*/
+	width:110%;
+	height:110%;
+	object-fit:cover;
+}
+
+.parallax-wrapper{
+	position: absolute;
+	float:left;
+	height: 100%;
+	object-fit:cover;
+}
+
+.parallax-img{
+	height: 75vh;
+}
+
+.header-grad{
+	z-index: 1;
+	position: absolute;
+	float:left;
+	width:100%;
+	height:100%;
+	background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 100%);
+}
+
+.content{
+	color:white;
+	background: linear-gradient(0deg, rgba(11,0,28,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.mep-header{
+	padding-top: 100px;
+	text-align: center;
+	letter-spacing: 10px;
+	font-size: 1.2em;
+}
+
+.mep-title{
+	font-family: 'Brush Script MT', cursive;
+	font-size: 100px;
+	text-align: center;
+}
+
+/*https://youtu.be/ZUTDOVwZCfw*/
+.about-container{
+	padding-top: 50px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.about-card{
+	position: relative;
+	width:30%;
+	cursor: pointer;
+}
+
+.about-card .about-name{
+	position: relative;
+	padding: 10px 0;
+	
+	text-align: center;
+	
+	z-index: 1;
+}
+
+.about-card .about-name h3{
+	padding-top: 5px;
+	font-weight: 900;
+	font-size: 2em;
+}
+
+.about-card .about-details{
+	position: relative;
+	top: -2px;
+	text-align: center;
+	height: 0;
+	transition: 0.5s;
+	border :2px solid #fff;
+	margin-top: -2px;
+	overflow: hidden;
+}
+
+.about-card:hover .about-details{
+	height:333px;
+}
+
+.about-card .about-details .about-content{
+	position: relative;
+	padding: 40px 20px; 
+}
+
+.about-card .about-details .about-content h2{
+	font-size: 3em;
+	font-weight: 500;
+}
+
+.about-card:nth-child(1) .about-name{
+	background: linear-gradient(45deg, rgba(119,161,211,1) 0%, rgba(121,203,202,1) 100%);
+}
+
+.about-card:nth-child(2) .about-name{
+	background: linear-gradient(45deg, rgba(121,203,202,1) 0%, rgba(203,191,121,1) 100%);
+}
+
+.about-card:nth-child(3) .about-name{
+	background: linear-gradient(45deg, rgba(203,191,121,1) 0%, rgba(203,121,121,1) 100%);
+}
+
+.part-sosmed-fb{
+	color:white;
+	padding-right: 10px;
+}
+.part-sosmed-fb:hover{
+	color:rgb(7, 143, 255);
+	text-decoration: none;
+}
+
+.part-sosmed-yt{
+	color:white;
+	padding-right: 10px;
+}
+.part-sosmed-yt:hover{
+	color:rgb(255, 34, 34);
+	text-decoration: none;
+}
+
+.part-sosmed-ig{
+	color:white;
+	padding-right: 10px;
+}
+.part-sosmed-ig:hover{
+	color:rgb(255, 0, 255);
+	text-decoration: none;
+}
+
+/* https://gradientbuttons.colorion.co/ */
+.btn-grad {background-image: linear-gradient(to right, #7474BF 0%, #348AC7  51%, #7474BF  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .image-footer{
+	background-image:
+    linear-gradient(to bottom, rgba(11,0,28,1), rgba(0, 0, 0, 0)),
+	linear-gradient(to top, rgb(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%),
+    url('bg-footer.jpeg');
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+	background-repeat: no-repeat;
+  	background-position: center;
+    color: white;
+    padding: 20px;
+ }
+
+ .bottom-credit{
+	padding: 15px 0;
+	background-color: black;
+	color:white;
+	text-align: center;
+ }
