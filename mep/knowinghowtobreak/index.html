@@ -7,6 +7,7 @@
 	<link rel="icon" href="iyon_logo.png">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 	<link rel="stylesheet" href="iyon.css" />
 	<title>MEP - Knowing How To Break</title>
@@ -71,7 +72,7 @@
 					</div>
 					<div class="about-details">
 						<div class="about-content">
-							<h3>( 7 / 15 )</h3>
+							<h3>( 8 / 15 )</h3>
 							<p>SLOT</p>
 							<h3>( 0 / 14 )</h3>
 							<p>WIP</p>
@@ -274,10 +275,13 @@
 						<a href="part/part-12.mp3" target="_blank" download>
 							<i class="fa fa-download" style="padding-left: 10px;"aria-hidden="true"></i></a>
 					</th>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td class="text-info">Open Slot</td>
+					<td>Rxxy</td>
+					<td>Sakurasou</td>
+					<td>
+						<a href="https://www.youtube.com/channel/UCZ27-5lXjeiPLROLLEJL_2Q" class="fa fa-youtube-play part-sosmed-yt" aria-hidden="true" target="_blank"></a>
+						<a href="https://www.instagram.com/dest.rxxy._/" class="fa fa-instagram part-sosmed-ig" aria-hidden="true" target="_blank"></a>
+					</td>
+					<td>Tagged</td>
 				  </tr>
 				  <tr>
 					<th scope="row" class="text-center">13 
@@ -430,6 +434,30 @@
 				</center>
 			</form>
 
+			<div class="mep-header">CONTACT PERSON (HOST)</div>
+			<br><br>
+			<div class="contact-person" id="scrollCP">
+				<ul>
+					<li><a class="button" href="#popupMyDiscord" onclick="disableScroll()"><i class="fa fa-discord" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.facebook.com/adryan.l.faiz/" target="_blank" ><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.instagram.com/iyonadryanlf/" target="_blank" ><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+
+			<div id="popupMyDiscord" class="overlay" style="z-index: 999;">
+				<a href="#" class="cancel"></a>
+				<div class="popup">
+				  	<p><img src="iyon_discord_profile.jpg" alt="avatar" style="width:90px;height:90px;margin-right:10px;border-radius:50%;pointer-events: none;"/>
+						<img src="discord_on.png" alt="online" style="width: 18px;height: 18px;margin-top: 65px;margin-left: -33px;border: 3px solid #35383d;border-radius: 100%;position: absolute;pointer-events: none;"/>
+				  	<h2>iyonadryanlf17<h class="tag">#7932</h></br><div id="client_logos"></div></h2></p>
+					<a class="close" href="#" onclick="closeDiscordProfile()">&times;</a>
+					<div class="content">
+						<button class="discord" onclick="copyDiscordIyon()">Click to copy ID</button>
+					
+					</div>
+				</div>
+			</div>
+			  
 			<div class="mep-header">INSPIRATION (RAW FX)</div>
 			<br>
 			<div class="row">
@@ -502,6 +530,46 @@
 	<div class="bottom-credit">@IYON AdryanLF &emsp;|&emsp; MEP Public &emsp;|&emsp; #partofamvindo &emsp;|&emsp; Tetap Positif dan Kreatif</div>
 
 	<script type="text/javascript">
+		function closeDiscordProfile() {
+			// go to page Contact Person after 1ms
+			myVar = setTimeout(contactPerson, 1);
+		}
+
+		function contactPerson() {
+			/*var elmnt = document.getElementById("scrollCP");
+  			elmnt.scrollIntoView();*/
+			const element = document.getElementById('scrollCP');
+			const elementRect = element.getBoundingClientRect();
+			const absoluteElementTop = elementRect.top + window.pageYOffset;
+			const middle = absoluteElementTop - (window.innerHeight / 2);
+			window.scrollTo(0, middle);
+			console.log("Back To Contact Person");
+			enableScroll();
+		}
+
+		function copyDiscordIyon(){
+			var copyText = "iyonadryanlf17#7932";
+			/* Copy the text inside the text field */
+  			navigator.clipboard.writeText(copyText);
+  			/* Alert the copied text */
+  			alert("Copied the text: " + copyText);
+		}
+
+		// call this to Disable
+		function disableScroll() {
+			console.log("Disable Scroll");
+			document.body.classList.add("stop-scrolling");
+		}
+
+		// call this to Enable
+		function enableScroll() {
+			console.log("Enable Scroll");
+			// Remove listener to re-enable scroll
+			document.body.classList.remove("stop-scrolling");
+		}
+
+
+
 		document.addEventListener("mousemove", parallax);
         function parallax(e){
             document.querySelectorAll(".object").forEach(function(move){
