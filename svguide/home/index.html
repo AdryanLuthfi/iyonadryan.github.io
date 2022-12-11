@@ -6,12 +6,16 @@
     <!-- icon -->
     <link rel="icon" href="../../materials/iyon_logo_color.png" type="image/x-icon">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <div w3-include-html="../header.html"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <div id="myheader"></div>
+    <!-- <div w3-include-html="../header.html"></div> -->
 </head>
 
 <body class="bg">
     <header>
-    <div w3-include-html="../navbar.html"></div>
+    <!-- <div w3-include-html="../navbar.html"></div> -->
+    <div id="mynavbar" class="mynavbar"></div>
     </header>
 
     <!-- Start Content-->
@@ -42,7 +46,19 @@
 
 <!-- Your custom scripts (optional) -->
 <script type="text/javascript">
+
+  const nav = document.querySelector('.mynavbar')
+  fetch('../navbar.html')
+  .then(res=>res.text())
+  .then(data=>{
+    nav.innerHTML=data
+  })
+  
   $( document ).ready(function() {
+    /*$('#myheader').load('../header.html');
+    $('#mynavbar').load('../navbar.html');
+    $('#myfooter').load('../footer.html');
+    */
     new WOW().init();
   });
 </script>
@@ -52,3 +68,5 @@ w3.includeHTML();
 
 </body>
 </html>
+
+<!-- TUTORIAL How to Include one HTML file into Another without any Framework or Library | HTML CSS JS Project : https://youtu.be/lwRiLHwHOjQ -->
