@@ -1,0 +1,112 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Neco Arc Walk</title><link rel="icon" href="img/iyon_logo_color.png" type="image/x-icon"><link rel="stylesheet" href="style_iyon.css"></head><body><a href="#" onclick="necoWalk()"><img src="asset/neco-arc-walk_render.gif" class="neco-arc" alt="NecoArc" width="100" height="100"></a><div class="start-click" id="start-click"><p>Try Click Me</p><p>&#9660;</p></div><img src="asset/chat_bubble.png" class="bubble-walk" id="bubble-walk" width="180" height="120"><p class="bubble-walk-text" id="bubble-walk-text">text</p><div class="ground" id="ground"></div><div class="ground-2"></div><div class="green-middle"></div><div class="tree" id="tree"></div><div class="house" id="house"></div><div class="sign" id="sign"></div><div class="crate" id="crate"></div><div class="slime" id="slime"></div><div class="footer"><img src="img/IYON_LOGO.png" class="iyon_logo" id="iyon_logo" width="75" height="75"><h4>Iyon AdryanLF</h4></div><script>var theGround = document.querySelector("#ground");
+    var theTree = document.querySelector("#tree");
+    var theHouse = document.querySelector("#house");
+    var theSign = document.querySelector("#sign");
+    var theCrate = document.querySelector("#crate");
+    var theSlime = document.querySelector("#slime");
+
+    var groundCurrentPos = 0;
+
+    var treeCurrentPos = 1000;
+    var houseCurrentPos = 2000;
+    var signCurrentPos = houseCurrentPos - 100;
+    var crateCurrentPos = houseCurrentPos + 300;
+
+    var slimeCurrentPos = 3000;
+
+    var requestAnimationFrame = window.requestAnimationFrame ||
+                                window.mozRequestAnimationFrame ||
+                                window.webkitRequestAnimationFrame ||
+                                window.msRequestAnimationFrame;
+
+    function moveThing() {
+        treeCurrentPos -= 1.5;
+        groundCurrentPos -= 1.5;
+        houseCurrentPos -= 1.5;
+        signCurrentPos -= 1.5;
+        crateCurrentPos -= 1.5;
+        slimeCurrentPos -= 1.5;
+
+        theTree.style.left = treeCurrentPos + "px";
+        theGround.style.left = groundCurrentPos + "px";
+        theHouse.style.left = houseCurrentPos + "px";
+        theSign.style.left = signCurrentPos + "px";
+        theCrate.style.left = crateCurrentPos + "px";
+        theSlime.style.left = slimeCurrentPos + "px";
+
+        if (groundCurrentPos <= -128) {
+            groundCurrentPos += 128;
+        }
+
+        const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+        
+        if (treeCurrentPos < -350) { 
+            treeCurrentPos = vw + 500;
+        }
+        if (houseCurrentPos < -350) {
+            houseCurrentPos = vw + 500;
+            signCurrentPos = houseCurrentPos - 100;
+            crateCurrentPos = houseCurrentPos + 300;
+        }
+
+        if (slimeCurrentPos < vw/2 + 1 && slimeCurrentPos > vw/2 - 1) { // range 1.5
+            stepOnSlime();
+            console.log("Step on slime");
+        }
+        if (slimeCurrentPos < -32){
+            slimeCurrentPos = vw + 300;
+        }
+
+
+        requestAnimationFrame(moveThing);
+    }
+
+    moveThing();
+
+    var theBubbleWalk = document.querySelector("#bubble-walk");
+    var theBubbleWalkText = document.getElementById("bubble-walk-text");
+    theBubbleWalk.style.display = 'none';
+    theBubbleWalkText.style.display = 'none';
+
+    var playlistWalk = new Array('sound/walk/Neco bu buuu.mp3'
+                                , 'sound/walk/Neco Juf.mp3'
+                                , 'sound/walk/Neco uhh.mp3'
+                                , 'sound/walk/Neco uhhh.mp3'
+                                , 'sound/walk/Neco uuniiu.mp3'
+                                , 'sound/walk/Neco uuuuhh.mp3');
+
+    function necoWalk() {
+        var audio = new Audio();
+        var randomIndex = Math.floor(Math.random() * 6); // 0 - 5
+        audio.src = playlistWalk[randomIndex];
+        audio.play();
+
+        var updateBubbleText = playlistWalk[randomIndex].replace('sound/walk/Neco ','').replace('.mp3','');
+        theBubbleWalkText.innerHTML = updateBubbleText;
+
+        theBubbleWalk.style.display = '';
+        theBubbleWalkText.style.display = '';
+
+        setTimeout(function () {
+            theBubbleWalk.style.display = 'none';
+            theBubbleWalkText.style.display = 'none';
+        }, 5000);
+
+        var firstClickText = document.getElementById("start-click");
+        firstClickText.style.display = 'none';
+    }
+
+    function stepOnSlime(){
+        var audio = new Audio('sound/Neco ungia!.mp3');
+        audio.play();
+
+        theBubbleWalkText.innerHTML = "Uaahh Slime !";
+
+        theBubbleWalk.style.display = '';
+        theBubbleWalkText.style.display = '';
+
+        setTimeout(function () {
+            theBubbleWalk.style.display = 'none';
+            theBubbleWalkText.style.display = 'none';
+        }, 5000);
+    }</script></body></html>

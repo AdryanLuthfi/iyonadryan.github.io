@@ -1,0 +1,193 @@
+/*<!-- Not Minify Version -->*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    overflow: hidden;
+    background-image: url("asset/back.png");
+    background-size: 1200px;
+}
+
+.neco-arc
+{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.start-click
+{
+    position: absolute;
+    width: 200px;
+    top: calc(50vh - 100px);
+    left: calc(50vw - 100px);
+    text-align: center;
+    justify-content: center;
+}
+
+.bubble-walk
+{
+    position: absolute;
+    top: calc(50vh - 120px);
+    left: calc(50vw - 50px);
+    z-index: 0;
+}
+
+.bubble-walk-text{
+    position: absolute;
+    top: calc(50vh - 90px);
+    left: calc(50vw - 20px);
+    width: 130px;
+    text-align: center;
+    z-index: 0;
+}
+
+.ground
+{
+    position: absolute;
+    height: 32px;
+    width: 200vw;
+    background-image: url("asset/tile028.png");
+    background-size: 32px;
+    /*background-repeat: repeat-x;*/
+    top: calc(50vh + 50px); 
+    z-index: 2;
+
+    /*animation: ground-move 1s linear infinite;*/
+}
+
+.ground-2
+{
+    position: absolute;
+    height: 50vh;
+    width: 200vw;
+    background-image: url("asset/tile078.png");
+    background-size: 32px;
+    background-repeat: repeat;
+
+    top: calc(50vh + 50px + 32px); 
+
+}
+/*
+@keyframes ground-move
+{
+    100% {
+        transform: translateX(-64px);
+    }
+}
+*/
+
+.green-middle
+{
+    position: absolute;
+    height: 100vh;
+    width: 200vw;
+    background-image: url("asset/middle.png");
+    background-size: 192px;
+    background-repeat: repeat-x;
+    top: calc(50vh - 50px); 
+    z-index: -1;
+
+    animation: green-middle-move 3s linear infinite;
+}
+
+@keyframes green-middle-move
+{
+    100% {
+        transform: translateX(-192px);
+    }
+}
+
+.tree
+{
+    position: absolute;
+    height: 100vh;
+    width: 256px;
+    background-image: url("asset/tree.png");
+    background-size: 256px;
+    background-repeat: no-repeat;
+    /*left: 50vw;*/
+    top: calc(50vh - 128px - 48px);
+    z-index: 2;
+}
+
+.house
+{
+    position: absolute;
+    height: 100vh;
+    width: 256px;
+    background-image: url("asset/house.png");
+    background-size: 256px;
+    background-repeat: no-repeat;
+
+    top: calc(50vh - 256px);
+    z-index: -1;
+}
+
+.sign
+{
+    position: absolute;
+    height: 100vh;
+    width: 256px;
+    background-image: url("asset/sign.png");
+    background-size: 32px;
+    background-repeat: no-repeat;
+
+    top: calc(50vh + 16px);
+    z-index: -1;
+}
+
+.crate
+{
+    position: absolute;
+    height: 100vh;
+    width: 256px;
+    background-image: url("asset/big-crate.png");
+    background-size: 32px;
+    background-repeat: no-repeat;
+
+    top: calc(50vh + 16px + 2px);
+    z-index: -1;
+}
+
+.slime
+{
+    position: absolute;
+    height: 100vh;
+    width: 256px;
+    background-image: url("asset/slime_pixel.gif");
+    background-size: 32px;
+    background-repeat: no-repeat;
+
+    top: calc(50vh + 24px);
+    z-index: 3;
+}
+
+
+.footer
+{
+    margin: 0;
+    position: absolute;
+    top: calc(100vh - 125px);
+    width: 100vw;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer h4
+{
+    font-weight: 200;
+    transform: translate(0, -10px);
+}
