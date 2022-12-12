@@ -9,13 +9,13 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <div id="myheader"></div>
-    <div w3-include-html="../header.html"></div>
+    <!-- <div w3-include-html="../header.html"></div> -->
 </head>
 
 <body class="bg">
     <header>
-    <div w3-include-html="../navbar.html"></div> 
-    <!--  <div id="mynavbar" class="mynavbar"></div> -->
+    <!--  <div w3-include-html="../navbar.html"></div> -->
+    <div id="mynavbar" class="mynavbar"></div> 
     </header>
 
     <!-- Start Content-->
@@ -30,36 +30,35 @@
 
     <!-- End Content-->
 
-    <div w3-include-html="../footer.html"></div> 
+    <!-- <div w3-include-html="../footer.html"></div> -->
 
 <!-- jQuery -->
-<script type="text/javascript" src="../../js/jquery.min.js"></script>
+<script type="text/javascript" src="../../about/js/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->
-<script type="text/javascript" src="../../js/popper.min.js"></script>
+<script type="text/javascript" src="../../about/js/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../about/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
-<script type="text/javascript" src="../../js/mdb.min.js"></script>
+<script type="text/javascript" src="../../about/js/mdb.min.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <!-- Your custom scripts (optional) -->
 <script type="text/javascript">
 
-  /*
   const nav = document.querySelector('.mynavbar')
   fetch('../navbar.html')
   .then(res=>res.text())
   .then(data=>{
     nav.innerHTML=data
   })
-  */
   
   $( document ).ready(function() {
+    /*
     $('#myheader').load('../header.html');
     $('#mynavbar').load('../navbar.html');
     $('#myfooter').load('../footer.html');
-    
+    */
     new WOW().init();
   });
 </script>
