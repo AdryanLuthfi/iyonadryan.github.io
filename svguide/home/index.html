@@ -9,13 +9,13 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <div id="myheader"></div>
-    <!-- <div w3-include-html="../header.html"></div> -->
+    <div w3-include-html="../header.html"></div>
 </head>
 
 <body class="bg">
     <header>
-    <!-- <div w3-include-html="../navbar.html"></div> -->
-    <div id="mynavbar" class="mynavbar"></div>
+    <div w3-include-html="../navbar.html"></div> 
+    <!--  <div id="mynavbar" class="mynavbar"></div> -->
     </header>
 
     <!-- Start Content-->
@@ -30,7 +30,7 @@
 
     <!-- End Content-->
 
-    <!-- <div w3-include-html="../footer.html"></div> -->
+    <div w3-include-html="../footer.html"></div> 
 
 <!-- jQuery -->
 <script type="text/javascript" src="../../js/jquery.min.js"></script>
@@ -42,23 +42,24 @@
 <script type="text/javascript" src="../../js/mdb.min.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
 <!-- Your custom scripts (optional) -->
 <script type="text/javascript">
 
+  /*
   const nav = document.querySelector('.mynavbar')
   fetch('../navbar.html')
   .then(res=>res.text())
   .then(data=>{
     nav.innerHTML=data
   })
+  */
   
   $( document ).ready(function() {
-    /*$('#myheader').load('../header.html');
+    $('#myheader').load('../header.html');
     $('#mynavbar').load('../navbar.html');
     $('#myfooter').load('../footer.html');
-    */
+    
     new WOW().init();
   });
 </script>
@@ -69,4 +70,10 @@ w3.includeHTML();
 </body>
 </html>
 
-<!-- TUTORIAL How to Include one HTML file into Another without any Framework or Library | HTML CSS JS Project : https://youtu.be/lwRiLHwHOjQ -->
+<!-- TUTORIAL How to Include one HTML file into Another without any Framework or Library | HTML CSS JS Project : 
+  https://youtu.be/lwRiLHwHOjQ 
+--
+error: Access to fetch at 'file:///C:/myData/testing/navbar.html' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, chrome-untrusted, https.
+--  
+you need a live server installed on vscode or any http server that host static files
+-->
