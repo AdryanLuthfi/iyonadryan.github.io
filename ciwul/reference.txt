@@ -1,1 +1,3 @@
 https://www.youtube.com/watch?v=li-ylRo7VEc
+
+https://github.com/emetdas/Youtube-code/tree/master/web%20components/Swiper-Slider-3D-Coverflow
