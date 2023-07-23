@@ -23,17 +23,15 @@
   <body>
     <div class="loader">
         <div class="loader-content">
-            <form name="myForm" method="POST">
-                <div class="mb-3">
-                <center>
-                    <h3>Password</h3>
-                </center>
-                <input id="myPass" type="password" class="form-control form-control-lg" id="InputPassword1" name="fpass">
-                </div>
-                <center>
-                    <button type="button" class="btn btn-primary btn-lg" onclick="inputPass()"><h4>Submit</h4></button>
-                </center>     
-            </form>
+            <div class="mb-3">
+            <center>
+                <h3>Password</h3>
+            </center>
+            <input id="myPass" type="password" class="form-control form-control-lg" id="InputPassword1" name="fpass">
+            </div>
+            <center>
+                <a onclick="inputPass()" href="javascript:void(0);"  class="btn btn-primary btn-lg"><h4>Submit</h4></a>
+            </center>     
         </div>
     </div>
     <div class="content">
@@ -177,7 +175,7 @@
         });
         */
         function inputPass(){
-            let x = document.forms["myForm"]["fpass"].value;
+            let x = document.getElementById("myPass").value;
             if (x != "190723") {
                 alert("Try Again");
                 document.getElementById("myPass").value = "";
