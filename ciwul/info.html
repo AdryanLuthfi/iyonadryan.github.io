@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="icon" href="iyon-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="info-style.css">
+    <title>Info</title>
+
+    <!-- https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Loader : https://youtu.be/0lyngYIozro-->
+    <link rel="stylesheet" href="../fontawesome/fontawesome-free-6.2.1-web/css/all.min.css">
+    <!-- https://fontawesome.com/ -->
+    <!-- https://fontawesome.com/search?q=work&o=r&m=free (free icon) -->
+
+  </head>
+  <body>
+    <div class="loader">
+        <div class="loader-content">
+            <form name="myForm" method="POST">
+                <div class="mb-3">
+                <center>
+                    <h3>Password</h3>
+                </center>
+                <input id="myPass" type="password" class="form-control form-control-lg" id="InputPassword1" name="fpass">
+                </div>
+                <center>
+                    <button type="button" class="btn btn-primary btn-lg" onclick="inputPass()"><h4>Submit</h4></button>
+                </center>     
+            </form>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="row row-cols-2 g-2 mt-3">
+                <!-- 1 -->
+                <div class="col">
+                    <div class="card text-dark bg-light">
+                        <div class="card-header">    
+                            <h3 class="text-uppercase"><i class="fa-solid fa-cake-candles"></i> Tanggal Lahir</h3>
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">&#8226; Iyon</h5>
+                        <p class="card-text">17 Mei 1998</p>
+                        <h5 class="card-title">&#8226; Ciwul</h5>
+                        <p class="card-text">15 Februari 1998</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col">
+                    <div class="card text-dark bg-light">
+                        <div class="card-header">
+                            <h3 class="text-uppercase"><i class="fa-solid fa-people-line"></i> Saudara</h3>
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">&#8226; Iyon</h5>
+                        <p class="card-text">Anak ke-2 dari 3 bersaudara (Kaka: Anggi, Adik: Azel)</p>
+                        <h5 class="card-title">&#8226; Ciwul</h5>
+                        <p class="card-text">Anak ke-2 dari 3 bersaudara (Kaka: Anggi, Adik: Azel)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col">
+                    <div class="card text-dark bg-light">
+                        <div class="card-header">
+                            <h3 class="text-uppercase"><i class="fa-solid fa-person"></i><i class="fa-solid fa-person-dress"></i> Orang Tua</h3>
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">&#8226; Iyon</h5>
+                        <p class="card-text">Mama: Henny Y , Papa: Agus H W</p>
+                        <h5 class="card-title">&#8226; Ciwul</h5>
+                        <p class="card-text">Mama: ??? , Papa: ???</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="col">
+                    <div class="card text-dark bg-light">
+                        <div class="card-header">
+                            <h3 class="text-uppercase"><i class="fa-solid fa-briefcase"></i> Kerja</h3>
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">&#8226; Iyon</h5>
+                        <p class="card-text">Astra Graphia (BackEnd Developer)</p>
+                        <h5 class="card-title">&#8226; Ciwul</h5>
+                        <p class="card-text">PTC Pulo Gadung ( ??? )</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="col">
+                    <div class="card text-dark bg-light">
+                        <div class="card-header">
+                            <h3 class="text-uppercase"><i class="fa-solid fa-school"></i> SMA/SMK</h3>
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">&#8226; Iyon</h5>
+                        <p class="card-text">SMA 52</p>
+                        <h5 class="card-title">&#8226; Ciwul</h5>
+                        <p class="card-text">SMK 49</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="col">
+                    <div class="card text-dark bg-light">
+                        <div class="card-header">
+                            <h3 class="text-uppercase"><i class="fa-solid fa-graduation-cap"></i> KULIAH</h3>
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">&#8226; Iyon</h5>
+                        <p class="card-text">Unpad (Teknik Informatika)</p>
+                        <h5 class="card-title">&#8226; Ciwul</h5>
+                        <p class="card-text">??? ( ??? )</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="col">
+                    <div class="card text-dark bg-light">
+                        <div class="card-header">
+                            <h3 class="text-uppercase"><i class="fa-solid fa-house"></i> TINGGAL</h3>
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">&#8226; Iyon</h5>
+                        <p class="card-text">Gang Elang</p>
+                        <h5 class="card-title">&#8226; Ciwul</h5>
+                        <p class="card-text">???</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="col">
+                    <div class="card text-dark bg-light">
+                        <div class="card-header">
+                            <h3 class="text-uppercase"><i class="fa-solid fa-star"></i> HOBI</h3>
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">&#8226; Iyon</h5>
+                        <p class="card-text">Game, Ngedit</p>
+                        <h5 class="card-title">&#8226; Ciwul</h5>
+                        <p class="card-text">Buku, Nonton</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="col">
+                    <div class="card text-dark bg-light">
+                        <div class="card-header">
+                            <h3 class="text-uppercase"><i class="fa-solid fa-palette"></i> SUKA WARNA</h3>
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">&#8226; Iyon</h5>
+                        <p class="card-text">Biru</p>
+                        <h5 class="card-title">&#8226; Ciwul</h5>
+                        <p class="card-text">Cream</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /*
+        $(window).on('load',function(){
+            $('.loader').fadeOut(1000);
+            $('.content').fadeIn(1000);
+        });
+        */
+        function inputPass(){
+            let x = document.forms["myForm"]["fpass"].value;
+            if (x != "190723") {
+                alert("Try Again");
+                document.getElementById("myPass").value = "";
+                return false;
+            }
+            else{
+                $('.loader').fadeOut(1000);
+                $('.content').fadeIn(1000);
+                return true;
+            }
+        }
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
