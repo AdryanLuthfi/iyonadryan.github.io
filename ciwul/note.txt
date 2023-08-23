@@ -1,0 +1,12 @@
+=== Reference ===
+
+https://www.youtube.com/watch?v=li-ylRo7VEc
+
+https://github.com/emetdas/Youtube-code/tree/master/web%20components/Swiper-Slider-3D-Coverflow
+
+===
+
+Open PHP Version (gallery.php) with XAMPP (Apache START), then view page source, copy paste to HTML Index Version (index.html)
+
+Original Page : gallery.php
+http://localhost/iyonadryan.github.io/ciwul/gallery.php
