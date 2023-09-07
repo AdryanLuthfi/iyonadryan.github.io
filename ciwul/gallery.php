@@ -178,7 +178,8 @@
                     5 => array('star' => 5, 'img' => '5_2023-07-23_134749_294.jpg', 'fav' => true, 'name' => 'Have A Treat'),
                     6 => array('star' => 4, 'img' => '6_2023-07-26_11-57-28.jpg', 'fav' => false, 'name' => 'Dobro Coffee'),
                     7 => array('star' => 5, 'img' => '7_2023-08-03_083348_241.jpg', 'fav' => true, 'name' => 'Kolibrew Coffee & Patisserie'),
-                    8 => array('star' => 5, 'img' => '8_2023-08-12_005149_635.jpg', 'fav' => true, 'name' => 'Cafe Liebe Blume')
+                    8 => array('star' => 5, 'img' => '8_2023-08-12_005149_635.jpg', 'fav' => true, 'name' => 'Cafe Liebe Blume'),
+                    9 => array('star' => 5, 'img' => '9_2023-09-06_222056_039.jpg', 'fav' => true, 'name' => 'Tavor Cafe')
                 );
                 foreach($arrays as $key=>$value): 
             ?>
@@ -236,6 +237,49 @@
         </div>
       </div>
       </center>
+      <br>
+      <!----------------------------------------------------->
+      <!-- Swiper start -->
+      <div class="container">
+        <h1 class="text-center section-heading">06/09/2023</h1>
+      </div>
+      <div class="container">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            <?php
+                $dir    = 'img/20230906/';
+                $files = array_diff(scandir($dir), array('..', '.'));
+                foreach($files as $key=>$value): 
+            ?>
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="<?= $dir.$value; ?>" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="img-number"><?= (int)$key-1; ?></h1>
+              </div>
+            </div>
+            <?php endforeach; ?>
+            <!-- Slide-end -->
+
+          </div>
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+
+        </div>
+      </div>
+      <!-- Swiper end -->
+      <!----------------------------------------------------->
+      <br>
+      <br>
       <br>
       <!----------------------------------------------------->
       <!-- Swiper start -->
