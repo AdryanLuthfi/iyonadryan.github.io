@@ -14,10 +14,32 @@
   </head>
 
   <body>
-    <video width="100%" autoplay loop muted>
-      <source src="img/vid/vid_20230713_175236_782.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video>
+    <div class="video_gif"> 
+      <video id="idle_video" width="100%" onended="onVideoEnded();" autoplay muted>
+          <source src="img/vid/vid_20230713_175236_782.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+          <script>
+              var video_list = [
+                "img/vid/vid_20230713_175236_782.mp4",
+                "img/vid/vid_20230909_055938_356.mp4"
+              ];
+              var video_index = 0;
+              var video_player = document.getElementById("idle_video");
+
+              function onVideoEnded(){
+                  console.log("video ended");
+                  if (video_index < video_list.length - 1){
+                      video_index++;
+                  }
+                  else{
+                      video_index = 0;
+                  }
+                  video_player.setAttribute("src", video_list[video_index]);
+                  video_player.play();
+              }
+          </script>
+      </video>
+    </div>
 
     <section id="tranding">
       <!----------------------------------------------------->

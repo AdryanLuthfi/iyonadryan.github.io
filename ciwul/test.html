@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="iyon-favicon.ico" type="image/x-icon">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+<!-- 
+    HTML : how to display multiple videos one by one dynamically in loop using HTML5 and javascript
+    https://www.youtube.com/watch?v=NMrQVXchvCo 
+-->
+  <body>
+    <video width="100%" autoplay loop muted>
+      <source src="img/vid/vid_20230713_175236_782.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="video_gif"> 
+        <video id="idle_video" width="100%" onended="onVideoEnded();" autoplay muted> <!-- must muted if autoplay-->
+            <source src="img/vid/vid_20230713_175236_782.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+            <script>
+                var video_list = [
+                    "img/vid/vid_20230713_175236_782.mp4",
+                    "img/vid/vid_20230909_055938_356.mp4"
+                ];
+                var video_index = 0;
+                var video_player = document.getElementById("idle_video");
+
+                function onVideoEnded(){
+                    console.log("video ended");
+                    if (video_index < video_list.length - 1){
+                        video_index++;
+                    }
+                    else{
+                        video_index = 0;
+                    }
+                    video_player.setAttribute("src", video_list[video_index]);
+                    video_player.play();
+                }
+            </script>
+        </video>
+    </div>
+    <video width="100%" autoplay loop muted>
+        <source src="img/vid/vid_20230713_175236_782.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+
+  </body>
+</html>
