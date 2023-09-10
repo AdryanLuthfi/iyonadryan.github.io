@@ -38,7 +38,8 @@
                 $arrays = array(
                     1 => array('date' => '13-07-2023', 'img' => '1_20230713_175236_782_90s.jpg'),
                     2 => array('date' => '29-07-2023', 'img' => '2_IMG_20230729_231951_881.jpg'),
-                    3 => array('date' => '29-07-2023', 'img' => '3_IMG_20230729_231951_962.jpg')
+                    3 => array('date' => '29-07-2023', 'img' => '3_IMG_20230729_231951_962.jpg'),
+                    4 => array('date' => '09-09-2023', 'img' => '4_IMG_20230909_192928_757.jpg')
                 );
                 foreach($arrays as $key=>$value): 
             ?>
@@ -237,6 +238,49 @@
         </div>
       </div>
       </center>
+      <br>
+      <!----------------------------------------------------->
+      <!-- Swiper start -->
+      <div class="container">
+        <h1 class="text-center section-heading">09/09/2023</h1>
+      </div>
+      <div class="container">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            <?php
+                $dir    = 'img/20230909/';
+                $files = array_diff(scandir($dir), array('..', '.'));
+                foreach($files as $key=>$value): 
+            ?>
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="<?= $dir.$value; ?>" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="img-number"><?= (int)$key-1; ?></h1>
+              </div>
+            </div>
+            <?php endforeach; ?>
+            <!-- Slide-end -->
+
+          </div>
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+
+        </div>
+      </div>
+      <!-- Swiper end -->
+      <!----------------------------------------------------->
+      <br>
+      <br>
       <br>
       <!----------------------------------------------------->
       <!-- Swiper start -->
