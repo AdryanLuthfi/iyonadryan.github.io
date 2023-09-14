@@ -13,32 +13,10 @@
   </head>
 
   <body>
-    <div class="video_gif"> 
-      <video id="idle_video" width="100%" onended="onVideoEnded();" autoplay muted>
-          <source src="img/vid/vid_20230713_175236_782.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
-          <script>
-              var video_list = [
-                "img/vid/vid_20230713_175236_782.mp4",
-                "img/vid/vid_20230909_055938_356.mp4"
-              ];
-              var video_index = 0;
-              var video_player = document.getElementById("idle_video");
-
-              function onVideoEnded(){
-                  console.log("video ended");
-                  if (video_index < video_list.length - 1){
-                      video_index++;
-                  }
-                  else{
-                      video_index = 0;
-                  }
-                  video_player.setAttribute("src", video_list[video_index]);
-                  video_player.play();
-              }
-          </script>
-      </video>
-    </div>
+  <video width="100%" autoplay loop muted>
+      <source src="img/vid/vid_20230713_175236_782.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
 
     <section id="tranding">
       <!----------------------------------------------------->
@@ -202,7 +180,8 @@
                     6 => array('star' => 4, 'img' => '6_2023-07-26_11-57-28.jpg', 'fav' => false, 'name' => 'Dobro Coffee'),
                     7 => array('star' => 5, 'img' => '7_2023-08-03_083348_241.jpg', 'fav' => true, 'name' => 'Kolibrew Coffee & Patisserie'),
                     8 => array('star' => 5, 'img' => '8_2023-08-12_005149_635.jpg', 'fav' => true, 'name' => 'Cafe Liebe Blume'),
-                    9 => array('star' => 5, 'img' => '9_2023-09-06_222056_039.jpg', 'fav' => true, 'name' => 'Tavor Cafe')
+                    9 => array('star' => 5, 'img' => '9_2023-09-06_222056_039.jpg', 'fav' => true, 'name' => 'Tavor Cafe'),
+                    10 => array('star' => 5, 'img' => '10_2023-09-12_103204_996.jpg', 'fav' => true, 'name' => 'Affan Coffee House (Kebantenan)')
                 );
                 foreach($arrays as $key=>$value): 
             ?>
@@ -260,6 +239,49 @@
         </div>
       </div>
       </center>
+      <br>
+      <!----------------------------------------------------->
+      <!-- Swiper start -->
+      <div class="container">
+        <h1 class="text-center section-heading">12/09/2023</h1>
+      </div>
+      <div class="container">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            <?php
+                $dir    = 'img/20230912/';
+                $files = array_diff(scandir($dir), array('..', '.'));
+                foreach($files as $key=>$value): 
+            ?>
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="<?= $dir.$value; ?>" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="img-number"><?= (int)$key-1; ?></h1>
+              </div>
+            </div>
+            <?php endforeach; ?>
+            <!-- Slide-end -->
+
+          </div>
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+
+        </div>
+      </div>
+      <!-- Swiper end -->
+      <!----------------------------------------------------->
+      <br>
+      <br>
       <br>
       <!----------------------------------------------------->
       <!-- Swiper start -->
