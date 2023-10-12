@@ -243,6 +243,49 @@
       <!----------------------------------------------------->
       <!-- Swiper start -->
       <div class="container">
+        <h1 class="text-center section-heading">11/10/2023</h1>
+      </div>
+      <div class="container">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            <?php
+                $dir    = 'img/20231011/';
+                $files = array_diff(scandir($dir), array('..', '.'));
+                foreach($files as $key=>$value): 
+            ?>
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="<?= $dir.$value; ?>" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="img-number"><?= (int)$key-1; ?></h1>
+              </div>
+            </div>
+            <?php endforeach; ?>
+            <!-- Slide-end -->
+
+          </div>
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+
+        </div>
+      </div>
+      <!-- Swiper end -->
+      <!----------------------------------------------------->
+      <br>
+      <br>
+      <br>
+      <!----------------------------------------------------->
+      <!-- Swiper start -->
+      <div class="container">
         <h1 class="text-center section-heading">30/09/2023</h1>
       </div>
       <div class="container">
