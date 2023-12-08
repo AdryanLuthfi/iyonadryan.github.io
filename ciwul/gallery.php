@@ -173,18 +173,20 @@
             <?php
                 $dir    = 'img/coffee_date/';
                 $arrays = array(
-                    1 => array('star' => 4, 'img' => '1_2023-03-11_12-43-51.jpg', 'fav' => false, 'name' => 'Kotta Kopi Kelapa Gading'),
-                    2 => array('star' => 5, 'img' => '2_2023-05-06_19-37-11.jpg', 'fav' => false, 'name' => 'LazyBoss Coffee and Desserts'),
-                    3 => array('star' => 5, 'img' => '3_2023-05-18_18-48-29.jpg', 'fav' => true, 'name' => 'Twizzly Coffee n Bake'),
-                    4 => array('star' => 5, 'img' => '4_2023-07-13_23-29-53.jpg', 'fav' => false, 'name' => 'Identic Coffee Shop'),
-                    5 => array('star' => 5, 'img' => '5_2023-07-23_134749_294.jpg', 'fav' => true, 'name' => 'Have A Treat'),
-                    6 => array('star' => 4, 'img' => '6_2023-07-26_11-57-28.jpg', 'fav' => false, 'name' => 'Dobro Coffee'),
-                    7 => array('star' => 5, 'img' => '7_2023-08-03_083348_241.jpg', 'fav' => true, 'name' => 'Kolibrew Coffee & Patisserie'),
-                    8 => array('star' => 5, 'img' => '8_2023-08-12_005149_635.jpg', 'fav' => false, 'name' => 'Cafe Liebe Blume'),
-                    9 => array('star' => 5, 'img' => '9_2023-09-06_222056_039.jpg', 'fav' => false, 'name' => 'Tavor Cafe'),
-                    10 => array('star' => 5, 'img' => '10_2023-09-12_103204_996.jpg', 'fav' => false, 'name' => 'Affan Coffee House (Kebantenan)'),
+                    12 => array('star' => 5, 'img' => '12_2023-12-02_004536_315.jpg', 'fav' => false, 'name' => 'High Ground Cafe'),
                     11 => array('star' => 5, 'img' => '11_2023-11-23_3696.jpg', 'fav' => true, 'name' => 'Kedai Kopi Serasi (Kebantenan)'),
-                    12 => array('star' => 5, 'img' => '12_2023-12-02_004536_315.jpg', 'fav' => false, 'name' => 'High Ground Cafe')
+                    10 => array('star' => 5, 'img' => '10_2023-09-12_103204_996.jpg', 'fav' => false, 'name' => 'Affan Coffee House (Kebantenan)'),
+                    9 => array('star' => 5, 'img' => '9_2023-09-06_222056_039.jpg', 'fav' => false, 'name' => 'Tavor Cafe'),
+                    8 => array('star' => 5, 'img' => '8_2023-08-12_005149_635.jpg', 'fav' => false, 'name' => 'Cafe Liebe Blume'),
+                    7 => array('star' => 5, 'img' => '7_2023-08-03_083348_241.jpg', 'fav' => true, 'name' => 'Kolibrew Coffee & Patisserie'),
+                    6 => array('star' => 4, 'img' => '6_2023-07-26_11-57-28.jpg', 'fav' => false, 'name' => 'Dobro Coffee'),
+                    5 => array('star' => 5, 'img' => '5_2023-07-23_134749_294.jpg', 'fav' => true, 'name' => 'Have A Treat'),
+                    4 => array('star' => 5, 'img' => '4_2023-07-13_23-29-53.jpg', 'fav' => false, 'name' => 'Identic Coffee Shop'),
+                    3 => array('star' => 5, 'img' => '3_2023-05-18_18-48-29.jpg', 'fav' => true, 'name' => 'Twizzly Coffee n Bake'),
+                    2 => array('star' => 5, 'img' => '2_2023-05-06_19-37-11.jpg', 'fav' => false, 'name' => 'LazyBoss Coffee and Desserts'),
+                    1 => array('star' => 4, 'img' => '1_2023-03-11_12-43-51.jpg', 'fav' => false, 'name' => 'Kotta Kopi Kelapa Gading')
+                    
+                    
                 );
                 foreach($arrays as $key=>$value): 
             ?>
