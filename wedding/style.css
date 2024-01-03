@@ -1,5 +1,5 @@
 :root{
-    --primary: #f14e95;
+    --primary: #f14e95; /* #f14e95 */
     --bg: #0a0a0a;
     --shadow: 0 2px 2px rgba(0,0,0, 0.5);
 }
@@ -487,7 +487,7 @@ footer li{
     }
 
     .simply-countdown >.simply-section{
-        padding: 45px;
+        padding: 35px;
         margin: 3px;
     }
 
