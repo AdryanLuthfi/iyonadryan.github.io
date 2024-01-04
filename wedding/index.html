@@ -13,6 +13,8 @@
     <script src="countdown/simplyCountdown.min.js"></script>
     <!-- Bootstap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -20,11 +22,11 @@
     <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex 
     justify-content-center align-items-center text-white">
         <main>
-            <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
-            <h1>Adryan & Suci</h1>
-            <p>Akan melangsungkan resepsi pernikahan dalam:</p>
-            <div class="simply-countdown"></div>
-            <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()">Lihat Undangan</a>
+            <h4 data-aos="fade-up" data-aos-duration="1500">Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
+            <h1 data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="250">Adryan & Suci</h1>
+            <p data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500">Akan melangsungkan resepsi pernikahan dalam:</p>
+            <div class="simply-countdown" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="750"></div>
+            <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">Lihat Undangan</a>
         </main>
     </section>
 
@@ -58,9 +60,9 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
-                    <h2>Acara Pernikahan</h2>
-                    <h3>Diselenggarakan pada 15 Desember 2024 di Jakarta</h3>
-                    <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang bapak/Ibu,
+                    <h2 data-aos="fade-up" data-aos-duration="1500">Acara Pernikahan</h2>
+                    <h3 data-aos="fade-up" data-aos-duration="1500" data-aos-delay="250">Diselenggarakan pada 15 Desember 2024 di Jakarta</h3>
+                    <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang bapak/Ibu,
                         Saudara/i, untuk hadir pada acara pernikahan kami.</p>
                 </div>
             </div>
@@ -69,32 +71,34 @@
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="col-8 text-end">
-                            <h3>Adryan Luthfi Faiz</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            <h3 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="250">Adryan Luthfi Faiz</h3>
+                            <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                            <p>Putra dari Bpk. Lorem <br> dan <br> Ibu Ipsum</p>
+                            <p data-aos="fade-left" data-aos-duration="1500" data-aos-delay="750">Putra dari Bpk. Lorem <br> dan <br> Ibu Ipsum</p>
                         </div>
                         <div class="col-4">
-                            <img src="img/couple_iyon.jpg" alt="Adryan Luthfi Faiz" class="img-responsive rounded-circle">
+                            <img src="img/couple_iyon.jpg" alt="Adryan Luthfi Faiz" class="img-responsive rounded-circle"
+                            data-aos="fade-right" data-aos-duration="1500">
                         </div>
                     </div>
                 </div>
-
-                <span class="heart"><i class="bi bi-heart-fill"></i></span>
 
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="col-4">
-                            <img src="img/couple_ciwul.jpg" alt="Suci Wulandari" class="img-responsive rounded-circle">
+                            <img src="img/couple_ciwul.jpg" alt="Suci Wulandari" class="img-responsive rounded-circle"
+                            data-aos="fade-left" data-aos-duration="1500">
                         </div>
                         <div class="col-8">
-                            <h3>Suci Wulandari</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            <h3 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="250">Suci Wulandari</h3>
+                            <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-                            <p>Putri dari Bpk. Ipsum <br> dan <br> Ibu Lorem</p>
+                            <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="750">Putri dari Bpk. Ipsum <br> dan <br> Ibu Lorem</p>
                         </div>
                     </div>
                 </div>
+
+                <span class="heart"><i class="bi bi-heart-fill" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="500"></i></span>
             </div>
         </div>
     </section>
@@ -389,7 +393,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- Lightbox for Bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
-    
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script>
         simplyCountdown('.simply-countdown', {
             year: 2024, // required
