@@ -294,32 +294,45 @@
                 </div>
             </div>
 
-            <form class="row row-cols-md-auto g-3 align-items-center justify-content-center">
-                <div class="col-12">
-                    <div class="mb-3">
-                        <label for="nama" class="form-label">Nama</label>
-                        <input type="text" class="form-control" id="nama" name="nama">
+            <form>
+                <div class="row row-cols-md-auto g-3 align-items-center justify-content-center">
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="nama" name="nama">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="jumlah" class="form-label">Jumlah</label>
+                            <input type="number" class="form-control" id="jumlah" name="jumlah" 
+                            min="1" max="5" length="1" value="1">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="status" class="form-label">Konfirmasi</label>
+                            <select name="status" id="status" class="form-select">
+                                <option value="-"selected>Pilih salah satu</option>
+                                <option value="Hadir">Hadir</option>
+                                <option value="Tidak Hadir">Tidak Hadir</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12">
-                    <div class="mb-3">
-                        <label for="jumlah" class="form-label">Jumlah</label>
-                        <input type="number" class="form-control" id="jumlah" name="jumlah" 
-                        min="1" max="5" length="1" value="1">
+                <div class="row row-cols-md-auto g-3 align-items-center justify-content-center">    
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan</label>
+                            <textarea class="form-control" placeholder="Pesan..." 
+                            id="pesan" name="pesan" rows="4" cols="51"></textarea>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12">
-                    <div class="mb-3">
-                        <label for="status" class="form-label">Konfirmasi</label>
-                        <select name="status" id="status" class="form-select">
-                            <option value="-"selected>Pilih salah satu</option>
-                            <option value="Hadir">Hadir</option>
-                            <option value="Tidak Hadir">Tidak Hadir</option>
-                        </select>
+                <div class="row row-cols-md-auto g-3 align-items-center justify-content-center">    
+                    <div class="col" style="margin-top: 35px;">
+                        <input type="submit" value="Kirim" class="btn btn-primary w-100" id="writeBtn"></input>
                     </div>
-                </div>
-                <div class="col-12" style="margin-top: 35px;">
-                    <input type="submit" value="Kirim" class="btn btn-primary" id="writeBtn"></input>
                 </div>
             </form>
         </div>
@@ -553,7 +566,7 @@
                 nama: document.getElementById("nama").value,
                 jumlah: document.getElementById("jumlah").value,
                 konfirmasi: document.getElementById("status").value,
-                pesan: "Ciwul Ayangkuu",
+                pesan: document.getElementById("pesan").value,
                 createdAt: serverTimestamp()
             }).then( ()=>{
                 alert("Data Added Succesfully");
