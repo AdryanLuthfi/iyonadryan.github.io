@@ -547,7 +547,7 @@
                 return false;
             }
 
-            set(ref(database, 'wedding/' + Date.now()), {
+            set(ref(database, 'wedding/' + (99999999999999 - Date.now()) ), { /*Key : Desc Order*/
                 nama: document.getElementById("nama").value,
                 jumlah: document.getElementById("jumlah").value,
                 konfirmasi: document.getElementById("status").value,
@@ -560,7 +560,7 @@
                 alert("Unsuccesfully");
                 console.log(error);
             });
-        })
+        });
 
         const listData = document.getElementById('list-data');
 
@@ -568,7 +568,7 @@
         onValue(starCountRef, (snapshot) => {
             const data = snapshot.val();
             console.log("Update Data");
-            console.log(data);
+            // console.log(data);
             listData.innerHTML = '';
             let i = 0;
             snapshot.forEach(function(childSnapshot) {
