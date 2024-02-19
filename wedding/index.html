@@ -336,10 +336,72 @@
                 </div>
             </form>
 
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-8 col-10 text-center">
+                    <h2>Pesan</h2>
+                    <p>Ucapan selamat untuk kedua mempelai</p>
+                </div>
+            </div>
+
             <div class="row row-cols-md-auto g-3 align-items-center justify-content-center">    
                 <div class="col">
                     <div class="mb-3">
-                        <p id="list-data"> TEST </p>
+                        <!-- <p id="list-data"> TEST </p> -->
+                        <div class="card pesan-rsvp" id="list-data">
+                            <!--
+                            <div class="card-header">
+                              Pesan
+                            </div>
+                            -->
+                            <div class="card-body">
+                              <blockquote class="blockquote mb-0">
+                                <p>A well-known quote, contained in a blockquote element.</p>
+                                <footer class="blockquote-footer">dari <cite title="Source Title">Adryan Luthfi Faiz</cite></footer>
+                              </blockquote>
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                  <p>A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element.</p>
+                                  <footer class="blockquote-footer">dari <cite title="Source Title">Suci Wulandari</cite></footer>
+                                </blockquote>
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                  <p>A well-known quote, contained in a blockquote element.</p>
+                                  <footer class="blockquote-footer">dari <cite title="Source Title">Adryan Luthfi Faiz</cite></footer>
+                                </blockquote>
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                  <p>A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element.</p>
+                                  <footer class="blockquote-footer">dari <cite title="Source Title">Suci Wulandari</cite></footer>
+                                </blockquote>
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                  <p>A well-known quote, contained in a blockquote element.</p>
+                                  <footer class="blockquote-footer">dari <cite title="Source Title">Adryan Luthfi Faiz</cite></footer>
+                                </blockquote>
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p>A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element.</p>
+                                    <footer class="blockquote-footer">dari <cite title="Source Title">Suci Wulandari</cite></footer>
+                                </blockquote>
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p>A well-known quote, contained in a blockquote element.</p>
+                                    <footer class="blockquote-footer">dari <cite title="Source Title">Adryan Luthfi Faiz</cite></footer>
+                                </blockquote>
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p>A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element.</p>
+                                    <footer class="blockquote-footer">dari <cite title="Source Title">Suci Wulandari</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -381,7 +443,7 @@
     </section>
 
 
-    <footer>
+    <footer class="footer-page">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
@@ -547,6 +609,16 @@
                 return false;
             }
 
+            if (document.getElementById("nama").value == "") {
+                alert("Nama Tidak Boleh Kosong");
+                return false;
+            }
+
+            if (document.getElementById("pesan").value == "") {
+                alert("Mohon Isi Pesan Terlebih Dahulu");
+                return false;
+            }
+
             set(ref(database, 'wedding/' + (99999999999999 - Date.now()) ), { /*Key : Desc Order*/
                 nama: document.getElementById("nama").value,
                 jumlah: document.getElementById("jumlah").value,
@@ -570,7 +642,6 @@
             console.log("Update Data");
             // console.log(data);
             listData.innerHTML = '';
-            let i = 0;
             snapshot.forEach(function(childSnapshot) {
                 // var childKey = childSnapshot.key.toString();
                 var nama = childSnapshot.child("nama").val().toString();
@@ -578,12 +649,12 @@
 				var konfirmasi = childSnapshot.child("konfirmasi").val().toString();
 				var pesan = childSnapshot.child("pesan").val().toString();
 
-				listData.innerHTML += '<br>' + '(' + i + ') ' +
-                        'Nama : ' +  nama + ' - ' +
-                        'Jumlah : ' +  jumlah + ' - ' +
-                        'Konfirmasi : ' +  konfirmasi + ' - ' +
-                        'Pesan : ' +  pesan ;
-                i++;
+				listData.innerHTML += '<div class="card-body">' +
+                        '<blockquote class="blockquote mb-0">' +
+                        '<p>' +  pesan + '</p>' +
+                        '<footer class="blockquote-footer">dari <cite title="Source Title">' +  nama + '</cite></footer>' +
+                        '</blockquote>' +
+                        '</div>' ;
             });
         });
         

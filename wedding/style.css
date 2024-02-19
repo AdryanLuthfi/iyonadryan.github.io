@@ -346,24 +346,35 @@ body{
     border: 1px solid white;
 }
 
+.pesan-rsvp{
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
+.blockquote p{
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
 /* --- */
-footer{
+footer.footer-page {
     padding: 3rem;
     background-color: var(--primary);
     color:white;
 }
 
-footer a{
+footer.footer-page a{
     color:var(--bg);
     font-weight: bold;
     text-decoration: none;
 }
 
-footer a:hover{
+footer.footer-page a:hover{
     color: white;
 }
 
-footer li{
+footer.footer-page li{
     list-style: none;
     display: inline;
     margin: 0.5rem;
