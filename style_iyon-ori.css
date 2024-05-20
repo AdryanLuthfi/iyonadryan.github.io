@@ -124,8 +124,12 @@ body{
 }
 */
 
+.web-project{
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.664);
+}
+
 .point{
-    margin-top: 100px;
+    padding-top: 50px;
     width: auto;
     letter-spacing: 1.2rem;
     text-transform: uppercase;
