@@ -1,0 +1,173 @@
+:root {
+    --primary: #B5AC49;
+    --secondary: #3CA55C;
+  }
+
+/* https://gradientbuttons.colorion.co/ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(img/back-image-3.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+}
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 240px;
+}
+
+.logo-img{
+    height: 35px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.logo-text{
+    font-size: 15px;
+    letter-spacing: -1px;
+    font-weight: 900;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+.login-btn{
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color:#fff;
+    background-image: linear-gradient(45deg, var(--primary), var(--secondary));
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+
+.content{
+    margin-top: 10%;
+    max-width: 600px;
+    z-index: 999;
+}
+
+.content h1{
+    font-size: 70px;
+    color: #222;
+}
+
+.content p{
+    margin: 10px 0 30px;
+    color: #333;
+    animation-delay: 0.5s;
+}
+
+.content .btn{
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+
+.social{
+   margin-top: 50px;
+   display: flex;
+   justify-content: space-between;
+   width: 200px;
+}
+
+.social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #333;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.social a:hover{
+    border-top-right-radius: 0;
+    color: var(--secondary);
+    border: 2px solid var(--secondary);
+}
+
+.social .fb{
+    animation-delay: 1.5s;
+}
+
+.social .ig{
+    animation-delay: 1.75s;
+}
+
+.social .yt{
+    animation-delay: 2s;
+}
+
+.social .dc{
+    animation-delay: 2.25s;
+}
+
+.feature-img{
+    min-width: 526px;
+    min-height: 737px;
+    position: absolute;
+    top:20%;
+    right:10%;
+    z-index: 0;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveUp 0.5s linear forwards;
+}
+
+@keyframes moveUp{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
