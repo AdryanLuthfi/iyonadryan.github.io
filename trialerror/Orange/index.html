@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iyon Ciwul - Orange</title>
+        <link rel="icon" type="image/png" href="material/iyon-favicon.ico" sizes="32x326">
+        <link rel="stylesheet" href="style.css">
+        <!-- Boxicons-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="space"> 
+            <div class="orange"> 
+                <div class="o-body"> 
+                    <img src="material/Body.gif" alt="Body" style="width:512px;height:512px;">
+                </div>
+                <div class="o-eye">
+                    <img src="material/Eye.gif" alt="Body" style="width:512px;height:512px;">
+                </div>
+                <div class="o-mouth"> 
+                    <img src="material/Mouth.gif" alt="Body" style="width:512px;height:512px;">
+                </div>
+            </div>
+            
+            <div class="hero">
+                <nav>
+                    <div class="logo">
+                        <img src="material/IYON_LOGO.png" class="logo-img">
+                        <h6 class="logo-text">Iyon Ciwul</h6>
+                    </div>        
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Profile</a></li>
+                    </ul>
+                    <div>
+                        <a href="#" class="btn">Download App</a>
+                    </div>
+                </nav>
+                
+                <div class="content">
+                    <h1 class="anim">Mr. Orange</h1>
+                    <p class="anim">Bring your imagination to life</p>
+                    <a href="#" class="btn anim">Join Now</a>
+                    <center>
+                    <div class="social">
+                        <a href="#" class="fb anim"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="ig anim"><i class='bx bxl-instagram' ></i></a>
+                        <a href="#" class="yt anim"><i class='bx bxl-youtube' ></i></a>
+                        <a href="#" class="dc anim"><i class='bx bxl-discord-alt' ></i></a>
+                    </div>
+                    </center>
+                    <p class="anim" style="animation-delay: 2.5s;">Software :</p>
+                    <div class="software-used">
+                        <img src="material/Adobe_After_Effects_icon.png" alt="AE" class="anim" style="width:20px;height:20px; animation-delay: 3.0s;">
+                        <a href="#" class="anim" style="margin-right: 10px; animation-delay: 3.25s;">: Adryan Luthfi Faiz <span class="light-text">(Adobe After Effect)</span></a>
+                        <img src="material/Adobe_Illustrator_icon.png" alt="AI" class="anim" style="width:20px;height:20px; animation-delay: 3.5s;">
+                        <a href="#" class="anim" style="animation-delay: 3.75s;">: Suci Wulandari <span class="light-text">(Adobe Illustrator)</span></a>
+                    </div>
+                    
+                </div>
+                
+                <!-- <img src="img/pic.png" class="feature-img"> -->
+                <!--  <iframe src="../../spline/TrialErrorMiniRoom.html" frameborder="0" width="50%" class="feature-img"></iframe> -->
+            </div>
+        </div>
+        <script>
+            /* 
+            Inspiration : Eyes follow mouse cursor using HTML CSS & Javascript
+            https://youtu.be/AixAmLWzXYg?si=rRHWywxRgJmPfxOY
+            */
+            var eye = document.getElementsByClassName("o-eye");
+            var mouth = document.getElementsByClassName("o-mouth");
+            document.onmousemove = function () {
+                /* 
+                var x = event.clientX * 100 / window.innerWidth + "%";
+                var y = event.clientY * 100 / window.innerHeight + "%";
+                event.clientX => get the horizontal coordinate of the onmousemove
+                event.clientY => get the vertical coordinate of the onmousemove
+                window.innerWidth => get the browser width
+                window.innerHeight =? get the browser height
+                */
+
+                var xEye = ((event.clientX * 10 / window.innerWidth) + 45) + "%"; // start from 45 to 55
+                var yEye = ((event.clientY * 20 / window.innerHeight) + 20) + "%"; // start from 40 to 60 - Top 40% ( (50-40) * 2)
+
+                var xMouth = ((event.clientX * 6 / window.innerWidth) + 47) + "%"; // start from 47 to 53
+
+                eye[0].style.left = xEye;
+                eye[0].style.top = yEye;
+                eye[0].style.transform = "translate(-"+ xEye +",-"+yEye+")";
+
+                mouth[0].style.left = xMouth;
+                mouth[0].style.top = yEye;
+                mouth[0].style.transform = "translate(-"+ xMouth +",-"+yEye+")";
+
+            }
+        </script>
+    </body>
+</html>
