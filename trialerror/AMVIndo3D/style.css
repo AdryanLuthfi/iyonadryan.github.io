@@ -1,0 +1,255 @@
+:root {
+    --primary: #B5AC49;
+    --secondary: #3CA55C;
+  }
+
+/* https://gradientbuttons.colorion.co/ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+.feature-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: 0;
+}
+
+
+.hero{
+    width: 100%;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+}
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 240px;
+    text-decoration: none;
+}
+
+.logo-img{
+    height: 35px;
+}
+
+.logo-text{
+    font-size: 15px;
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/* btn */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 30px;
+}
+.btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+}
+/* glow */
+.btn::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #FF0000, #FF7300, #FFFB00, #48FF00,
+      #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 30px;
+    opacity: 0;
+}
+
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
+/* hover */
+.btn:hover::before {
+    opacity: 1;
+}
+  
+.btn:active:after {
+    background: transparent;
+}
+  
+.btn:active {
+    color: #000;
+    font-weight: bold;
+}
+
+.content{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50px);
+    max-width: 1000px;
+    z-index: 999;
+    text-align: center;
+}
+
+.content h3{
+    font-size: 1.2rem;
+    animation-delay: 0.25s;
+}
+
+.content p{
+    margin-top: 5px;
+    font-size: 0.7rem;
+    color: #cccccc;
+    animation-delay: 0.55s;
+}
+
+.social{
+   margin-top: 10px;
+   display: flex;
+   justify-content: space-between;
+   width: 200px;
+}
+
+/* link social*/
+.social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.social a::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+}
+
+/* glow */
+.social a::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #FF0000, #FF7300, #FFFB00, #48FF00,
+      #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+/* hover */
+.social a:hover::before {
+    opacity: 1;
+}
+  
+.social a:active:after {
+    background: transparent;
+}
+  
+.social a:active {
+    color: #000;
+    font-weight: bold;
+}
+
+.social .fb{
+    animation-delay: 1s;
+}
+
+.social .ig{
+    animation-delay: 1.25s;
+}
+
+.social .yt{
+    animation-delay: 1.5s;
+}
+
+.social .dc{
+    animation-delay: 1.75s;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveUp 0.5s linear forwards;
+}
+
+@keyframes moveUp{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
