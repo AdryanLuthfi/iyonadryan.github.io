@@ -228,18 +228,25 @@ body{
     background-image: linear-gradient(to right, #e73c6d 0%, #F7BB97  51%, #e73c6d  100%);
 }
 
-.card-svn>.iyon-card-container:after{
-    background-image: linear-gradient(135deg,#0100ec,#fb36f4);
-}
-.iyon-card-button.button-svn{
-    background-image: linear-gradient(to right, #0100ec 0%, #fb36f4  51%, #0100ec  100%);
-}
-
 .card-amvindo3d>.iyon-card-container:after{
     background-image: linear-gradient(135deg,#000000,#53346D);
 }
 .iyon-card-button.button-amvindo3d{
     background-image: linear-gradient(to right, #000000 0%, #53346D  51%, #000000  100%);
+}
+
+.card-orange>.iyon-card-container:after{
+    background-image: linear-gradient(135deg,#ffab1d,#f8501c);
+}
+.iyon-card-button.button-orange{
+    background-image: linear-gradient(to right, #ffab1d 0%, #f8501c  51%, #ffab1d  100%);
+}
+
+.card-svn>.iyon-card-container:after{
+    background-image: linear-gradient(135deg,#0100ec,#fb36f4);
+}
+.iyon-card-button.button-svn{
+    background-image: linear-gradient(to right, #0100ec 0%, #fb36f4  51%, #0100ec  100%);
 }
 
 .card-miniature>.iyon-card-container:after{
@@ -257,10 +264,10 @@ body{
 }
 
 .card-mepkhtb>.iyon-card-container:after{
-    background-image: linear-gradient(135deg,#ffab1d,#f8501c);
+    background-image: linear-gradient(135deg,#003973,#E5E5BE);
 }
 .iyon-card-button.button-mepkhtb{
-    background-image: linear-gradient(to right, #ffab1d 0%, #f8501c  51%, #ffab1d  100%);
+    background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%);
 }
 
 .card-necoarc>.iyon-card-container:after{
