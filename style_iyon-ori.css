@@ -235,6 +235,13 @@ body{
     background-image: linear-gradient(to right, #0100ec 0%, #fb36f4  51%, #0100ec  100%);
 }
 
+.card-amvindo3d>.iyon-card-container:after{
+    background-image: linear-gradient(135deg,#000000,#53346D);
+}
+.iyon-card-button.button-amvindo3d{
+    background-image: linear-gradient(to right, #000000 0%, #53346D  51%, #000000  100%);
+}
+
 .card-miniature>.iyon-card-container:after{
     background-image: linear-gradient(135deg,#16A085,#F4D03F);
 }
