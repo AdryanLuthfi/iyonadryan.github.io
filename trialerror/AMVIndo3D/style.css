@@ -40,8 +40,14 @@ nav{
 .logo{
     display: flex;
     align-items: center;
-    width: 240px;
+    width: 140px;
     text-decoration: none;
+    transition: 0.5s;
+    /*background-color: #48FF00;*/
+}
+
+.logo:hover{
+    transform: scale(1.2);
 }
 
 .logo-img{
@@ -52,6 +58,19 @@ nav{
     font-size: 15px;
     letter-spacing: -1px;
     font-weight: 500;
+}
+
+.logo-amv{
+    display: flex;
+    align-items: center;
+    width: 105px;
+    text-decoration: none;
+    transition: 1s;
+    /*background-color: #48FF00;*/
+}
+
+.logo-amv:hover{
+    transform: rotate3d(0, 1, 0, 360deg);
 }
 
 nav ul li{
@@ -251,5 +270,36 @@ nav ul li a{
     100%{
         opacity: 1;
         transform: translateY(0px);
+    }
+}
+
+/* --- */
+.audio-icon-wrapper{
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: absolute;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    z-index: 999;
+}
+
+@keyframes rotating {
+    from{
+        transform: rotate(0);
+    }
+    from{
+        transform: rotate(360deg);
     }
 }

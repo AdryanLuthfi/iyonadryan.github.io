@@ -22,6 +22,9 @@
                     <!-- 
                     <li><a href="#">AMV INDONESIA</a></li> 
                      -->
+                     <a href="#" onclick="return linkNotReadyFunction();" class="logo-amv" style="transform-origin: center center">
+                        <img src="amvindologo-white.png" class="logo-img">
+                    </a>
                 </ul>
                 <div>
                     <a href="https://facebook.com/groups/AMVINDONESIA" class="btn" target="_blank">JOIN US</a>
@@ -44,10 +47,55 @@
             </div>
             </center>
         </div>
+
+        <div id="audio-container">
+            <audio id="song" autoplay loop>
+                <source src="music/I Miss You Fierce - Rendez-Voodoo_128.mp3" type="audio/mp3">
+            </audio>
+    
+            <div class="audio-icon-wrapper">
+                <i class="bx bx-pause-circle"></i>
+            </div>
+        </div>
+
         <script>
             function linkNotReadyFunction() {
               alert("Link is not ready!");
             }
-            </script>
+        </script>
+
+        <script>
+            const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+            const audioIcon = document.querySelector('.audio-icon-wrapper i');
+            const song = document.querySelector('#song');
+            let isPlaying = false;
+
+            song.volume = 0.75;
+
+            /*
+            function playAudio(){
+                audioIconWrapper.style.display = 'flex';
+                song.play();
+                isPlaying = true;
+            }
+            */
+
+            audioIconWrapper.onclick = function(){
+                if(isPlaying){
+                    song.pause();
+                    audioIcon.classList.remove('bx-play-circle');
+                    audioIcon.classList.add('bx-pause-circle');
+                }
+                else{
+                    song.play();
+                    audioIcon.classList.add('bx-play-circle');
+                    audioIcon.classList.remove('bx-pause-circle');
+                }
+
+                isPlaying = !isPlaying;
+            }
+
+        </script>
+
     </body>
 </html>
